@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on MILAI AI</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:1313/blog-milaiai/tags/</link>
     <description>Recent content in Tags on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/blog-milaiai/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>themes</title>
-      <link>http://localhost:1313/tags/themes/</link>
+      <link>http://localhost:1313/blog-milaiai/tags/themes/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/themes/</guid>
+      <guid>http://localhost:1313/blog-milaiai/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>http://localhost:1313/tags/css/</link>
+      <link>http://localhost:1313/blog-milaiai/tags/css/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/css/</guid>
+      <guid>http://localhost:1313/blog-milaiai/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>http://localhost:1313/tags/html/</link>
+      <link>http://localhost:1313/blog-milaiai/tags/html/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/html/</guid>
+      <guid>http://localhost:1313/blog-milaiai/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>http://localhost:1313/tags/markdown/</link>
+      <link>http://localhost:1313/blog-milaiai/tags/markdown/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/markdown/</guid>
+      <guid>http://localhost:1313/blog-milaiai/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>privacy</title>
-      <link>http://localhost:1313/tags/privacy/</link>
+      <link>http://localhost:1313/blog-milaiai/tags/privacy/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/privacy/</guid>
+      <guid>http://localhost:1313/blog-milaiai/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>http://localhost:1313/tags/shortcodes/</link>
+      <link>http://localhost:1313/blog-milaiai/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/shortcodes/</guid>
+      <guid>http://localhost:1313/blog-milaiai/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>http://localhost:1313/tags/text/</link>
+      <link>http://localhost:1313/blog-milaiai/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/text/</guid>
+      <guid>http://localhost:1313/blog-milaiai/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>http://localhost:1313/tags/emoji/</link>
+      <link>http://localhost:1313/blog-milaiai/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/emoji/</guid>
+      <guid>http://localhost:1313/blog-milaiai/tags/emoji/</guid>
       <description></description>
     </item>
     
