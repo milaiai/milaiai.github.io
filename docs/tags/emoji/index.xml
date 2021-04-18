@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>emoji on MILAI AI</title>
-    <link>http://localhost:1313/blog-milaiai/tags/emoji/</link>
+    <link>https://yubaoliu.github.io/blog-milaiai/tags/emoji/</link>
     <description>Recent content in emoji on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://localhost:1313/blog-milaiai/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yubaoliu.github.io/blog-milaiai/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emoji Support</title>
-      <link>http://localhost:1313/blog-milaiai/post/emoji-support/</link>
+      <link>https://yubaoliu.github.io/blog-milaiai/post/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog-milaiai/post/emoji-support/</guid>
+      <guid>https://yubaoliu.github.io/blog-milaiai/post/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     

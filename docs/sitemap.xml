@@ -1,131 +1,79 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>http://localhost:1313/blog-milaiai/post/image-test/</loc>
+    <loc>https://yubaoliu.github.io/blog-milaiai/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/post/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/post/image-test/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/tags/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/post/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/tags/themes/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/tags/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/tags/themes/</loc>
+    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/categories/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/categories/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/tags/css/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/tags/css/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/tags/html/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/tags/html/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/tags/markdown/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/tags/markdown/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/post/markdown-syntax/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/post/markdown-syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/categories/syntax/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/categories/syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/categories/themes/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/categories/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/tags/privacy/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/tags/privacy/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/post/rich-content/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/post/rich-content/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/tags/shortcodes/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/tags/shortcodes/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/post/placeholder-text/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/post/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/tags/text/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/tags/text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/post/math-typesetting/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/post/math-typesetting/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/tags/emoji/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/tags/emoji/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/post/emoji-support/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/post/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/about/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/archives/2019/03/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/archives/2020/08/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/archives/</loc>
+  </url><url>
+    <loc>https://yubaoliu.github.io/blog-milaiai/contact/</loc>
   </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/archives/2019/03/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/archives/2020/08/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/archives/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/blog-milaiai/contact/</loc>
-  </url>
-  
 </urlset>

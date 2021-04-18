@@ -23,4 +23,7 @@ $ git submodule update --remote --merge
 
 ```sh
 hugo server --renderToDisk
+hugo server --renderToDisk --disableFastRender -t Blonde
+
+hugo --gc -v -t Blonde
 ```

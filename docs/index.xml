@@ -2,84 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MILAI AI</title>
-    <link>http://localhost:1313/blog-milaiai/</link>
+    <link>https://yubaoliu.github.io/blog-milaiai/</link>
     <description>Recent content on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://localhost:1313/blog-milaiai/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://yubaoliu.github.io/blog-milaiai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Image Test</title>
-      <link>http://localhost:1313/blog-milaiai/post/image-test/</link>
+      <link>https://yubaoliu.github.io/blog-milaiai/post/image-test/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog-milaiai/post/image-test/</guid>
+      <guid>https://yubaoliu.github.io/blog-milaiai/post/image-test/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/blog-milaiai/archives/</link>
+      <link>https://yubaoliu.github.io/blog-milaiai/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog-milaiai/archives/</guid>
+      <guid>https://yubaoliu.github.io/blog-milaiai/archives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>http://localhost:1313/blog-milaiai/post/markdown-syntax/</link>
+      <link>https://yubaoliu.github.io/blog-milaiai/post/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog-milaiai/post/markdown-syntax/</guid>
+      <guid>https://yubaoliu.github.io/blog-milaiai/post/markdown-syntax/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rich Content</title>
-      <link>http://localhost:1313/blog-milaiai/post/rich-content/</link>
+      <link>https://yubaoliu.github.io/blog-milaiai/post/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog-milaiai/post/rich-content/</guid>
+      <guid>https://yubaoliu.github.io/blog-milaiai/post/rich-content/</guid>
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Placeholder Text</title>
-      <link>http://localhost:1313/blog-milaiai/post/placeholder-text/</link>
+      <link>https://yubaoliu.github.io/blog-milaiai/post/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog-milaiai/post/placeholder-text/</guid>
+      <guid>https://yubaoliu.github.io/blog-milaiai/post/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Math Typesetting</title>
-      <link>http://localhost:1313/blog-milaiai/post/math-typesetting/</link>
+      <link>https://yubaoliu.github.io/blog-milaiai/post/math-typesetting/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog-milaiai/post/math-typesetting/</guid>
+      <guid>https://yubaoliu.github.io/blog-milaiai/post/math-typesetting/</guid>
       <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Emoji Support</title>
-      <link>http://localhost:1313/blog-milaiai/post/emoji-support/</link>
+      <link>https://yubaoliu.github.io/blog-milaiai/post/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog-milaiai/post/emoji-support/</guid>
+      <guid>https://yubaoliu.github.io/blog-milaiai/post/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/blog-milaiai/about/</link>
+      <link>https://yubaoliu.github.io/blog-milaiai/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog-milaiai/about/</guid>
+      <guid>https://yubaoliu.github.io/blog-milaiai/about/</guid>
       <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 Hugo makes use of a variety of open source projects including:
  https://github.</description>
@@ -87,10 +83,10 @@ Hugo makes use of a variety of open source projects including:
     
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/blog-milaiai/contact/</link>
+      <link>https://yubaoliu.github.io/blog-milaiai/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog-milaiai/contact/</guid>
+      <guid>https://yubaoliu.github.io/blog-milaiai/contact/</guid>
       <description> To contact us, please fill out the form below.
        </description>
     </item>
