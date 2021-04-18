@@ -16,6 +16,8 @@ enableRobotsTXT = true
 # Disqus Comment System
 #disqusShortname = ""
 
+publishDir = "docs"
+
 [params]
 # The number of articles to be displayed on a single page.
 paginator_pages = "5"
