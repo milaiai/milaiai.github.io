@@ -5,6 +5,16 @@
     <link>https://milaiai.com/tags/</link>
     <description>Recent content in Tags on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://milaiai.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Robotics</title>
+      <link>https://milaiai.com/tags/robotics/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/robotics/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
