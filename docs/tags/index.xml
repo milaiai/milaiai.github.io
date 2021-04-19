@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on MILAI AI</title>
-    <link>http://milaiai.github.io/tags/</link>
+    <link>https://milaiai.github.io/tags/</link>
     <description>Recent content in Tags on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://milaiai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Robotics</title>
-      <link>http://milaiai.github.io/tags/robotics/</link>
+      <link>https://milaiai.github.io/tags/robotics/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://milaiai.github.io/tags/robotics/</guid>
+      <guid>https://milaiai.github.io/tags/robotics/</guid>
       <description></description>
     </item>
     

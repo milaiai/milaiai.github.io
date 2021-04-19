@@ -2,70 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2019/03 on MILAI AI</title>
-    <link>http://milaiai.github.io/archives/2019/03/</link>
+    <link>https://milaiai.github.io/archives/2019/03/</link>
     <description>Recent content in 2019/03 on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://milaiai.github.io/archives/2019/03/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://milaiai.github.io/archives/2019/03/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agent引擎的实现</title>
-      <link>http://milaiai.github.io/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+      <link>https://milaiai.github.io/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://milaiai.github.io/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>https://milaiai.github.io/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
       <description>Overview 之前学习了状态迁移函数，并能绘制机器人。 这节的目标是实现机器人的引擎，让机器人能动起来。 笔记 ロボットの制御指令を決めるエージェントのクラス</description>
     </item>
     
     <item>
       <title>机器人位姿描述</title>
-      <link>http://milaiai.github.io/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</link>
+      <link>https://milaiai.github.io/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://milaiai.github.io/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</guid>
+      <guid>https://milaiai.github.io/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</guid>
       <description>Objective 绘制世界坐标系 如何描述机器人的位姿 如何绘制世界坐标系 如何绘制机器人位姿 可参考：3.2.2 ロボットの姿勢と描く 対向２輪ロボット(Differ</description>
     </item>
     
     <item>
       <title>机器人开发环境介绍</title>
-      <link>http://milaiai.github.io/post/ch1-environment/</link>
+      <link>https://milaiai.github.io/post/ch1-environment/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://milaiai.github.io/post/ch1-environment/</guid>
+      <guid>https://milaiai.github.io/post/ch1-environment/</guid>
       <description>机器人开发环境介绍 In this blog, I will tintroduce: the usage case of robots the development environment for simulation (Python + conda) ![robot-world-coordinate.png](img/ch1-Environment setment/robot-world-coordinate.png) Robot Introduction Soccer match: Human support robot: Note: you can find these videos on https://space.bilibili.com/52620240 too. Environment Deployment (optional) Anyconda or other virtual Python environment Jupyter notebook You can refer https://www.ybliu.com/2021/01/OpenCV-Python-Development.html to deploy a conda-based development environment. Test Environment Run</description>
     </item>
     
     <item>
       <title>概率机器人资料</title>
-      <link>http://milaiai.github.io/post/%E6%A6%82%E7%8E%87%E6%9C%BA%E5%99%A8%E4%BA%BA-%E8%B5%84%E6%96%99/</link>
+      <link>https://milaiai.github.io/post/%E6%A6%82%E7%8E%87%E6%9C%BA%E5%99%A8%E4%BA%BA-%E8%B5%84%E6%96%99/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://milaiai.github.io/post/%E6%A6%82%E7%8E%87%E6%9C%BA%E5%99%A8%E4%BA%BA-%E8%B5%84%E6%96%99/</guid>
+      <guid>https://milaiai.github.io/post/%E6%A6%82%E7%8E%87%E6%9C%BA%E5%99%A8%E4%BA%BA-%E8%B5%84%E6%96%99/</guid>
       <description>Books 概率机器人详解 Homepage ryuichiueda/LNPR_SLIDES ryuichiueda/LNPR_BOOK_CODES</description>
     </item>
     
     <item>
       <title>用动画来绘制Robot仿真环境</title>
-      <link>http://milaiai.github.io/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</link>
+      <link>https://milaiai.github.io/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://milaiai.github.io/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https://milaiai.github.io/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</guid>
       <description>Objective 用动画来绘制Robot仿真环境 重要函数 matplotlib.animation.FuncAnimation class matplotlib.animation.FuncAnimation(fig, func, frames=None, init_func=None, fargs=None, save_count=None, *, cache_frame_data=True, **kwargs)[source] intervalnumber, optional Delay between frames in milliseconds. Defaults to 200. frames iterable, int, generator function, or None, optional fargstuple or None, optional Additional arguments to pass to each call to func. Refer https://matplotlib.org/api/_as_gen/matplotlib.animation.FuncAnimation.html for detail. matplotlib.pyplot.plo https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot matplotlib.pyplot.plot(*args, scalex=True,</description>
     </item>
     
     <item>
       <title>绘制Landmark</title>
-      <link>http://milaiai.github.io/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</link>
+      <link>https://milaiai.github.io/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://milaiai.github.io/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</guid>
+      <guid>https://milaiai.github.io/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</guid>
       <description>Overview 概率机器人详解 （Python） 3.3.1 点ランドマークの設置 本文将介绍： Landmark 是什么 如何绘制Landmark 实现Landmark 类与Map类的框架 理论</description>
     </item>
     
     <item>
       <title>运动方程</title>
-      <link>http://milaiai.github.io/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</link>
+      <link>https://milaiai.github.io/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://milaiai.github.io/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</guid>
+      <guid>https://milaiai.github.io/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</guid>
       <description>内容 运动方程， 控制命令， 让机器人动起来。 理论 (Refered From: https://github.com/ryuichiueda/LNPR_SLIDES/blob/master/old_version/figs/robot_motion1.png) (Refered From: https://github.com/ryuichiueda/LNPR_SLIDES/raw/master/old_version/figs/robot_motion2.png) 相关变量 速度: $nv [m/s]$ 角速度： $\omega [rad/s]$ 制御指令：从 $t-1$ 时刻到$t$时刻的运动指令 $u_t = (\nu_t, \omega_t)$ 制御指</description>
     </item>
     
