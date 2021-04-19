@@ -1,5 +1,5 @@
-# baseURL = "https://milaiai.github.io/"
-baseURL = "https://www.milaiai.com/"
+baseURL = "https://milaiai.github.io/"
+# baseURL = "https://www.milaiai.com/"
 title = "MILAI AI"
 author = "yubao"
 
@@ -13,7 +13,7 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 
 # If you're using Google Analytics, you can enable this feature.
-#googleAnalytics = "G-1234567890"
+googleAnalytics = "UA-131527698-4"
 
 # Disqus Comment System
 #disqusShortname = ""
