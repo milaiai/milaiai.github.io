@@ -1,4 +1,5 @@
-baseURL = "https://yubaoliu.github.io/blog-milaiai/"
+#baseURL = "https://yubaoliu.github.io/blog-milaiai/"
+baseURL = "https://milaiai.com/"
 title = "MILAI AI"
 author = "yubao"
 
