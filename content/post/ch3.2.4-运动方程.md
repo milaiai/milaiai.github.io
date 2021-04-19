@@ -3,6 +3,7 @@ author = "Yubao"
 title = "运动方程"
 date = "2019-03-10"
 description = "运动方程"
+image = "img/cover.jpg"
 tags = [
     "Robotics",
 ]

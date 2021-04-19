@@ -2,7 +2,8 @@
 author = "Yubao"
 title = "机器人开发环境介绍"
 date = "2019-03-10"
-description = ""
+description = "机器人开发环境介绍"
+image =  "img/cover.jpg"
 tags = [
     "Robotics",
 ]
@@ -16,6 +17,8 @@ In this blog, I will tintroduce:
 
 1. the usage case of robots
 2. the development environment for simulation (Python + conda)
+
+![robot-world-coordinate.png](img/ch1-Environment setment/robot-world-coordinate.png)
 
 # Robot Introduction
 
@@ -78,6 +81,3 @@ world = World()
 world.draw()
 ```
 
-Result:
-
-![robot-world-coordinate.png](img/ch1-Environment setment/robot-world-coordinate.png)

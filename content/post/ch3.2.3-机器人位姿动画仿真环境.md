@@ -3,6 +3,7 @@ author = "Yubao"
 title = "用动画来绘制Robot仿真环境"
 date = "2019-03-10"
 description = "用动画来绘制Robot仿真环境"
+image  = "img/cover.jpg"
 tags = [
     "Robotics",
 ]
@@ -12,6 +13,8 @@ archives = ["2019/03"]
 # Objective
 
 - 用动画来绘制Robot仿真环境
+
+![robot_world_animation](https://cdn.jsdelivr.net/gh/yubaoliu/assets@image/robot_world_animation.gif)
 
 # 重要函数
 
@@ -138,6 +141,3 @@ rc('animation', html='jshtml')
 ani    # or HTML(anim.to_jshtml()
 ```
 
-
-
-![robot_world_animation](https://cdn.jsdelivr.net/gh/yubaoliu/assets@image/robot_world_animation.gif)

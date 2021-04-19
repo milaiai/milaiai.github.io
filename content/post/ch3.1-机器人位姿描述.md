@@ -3,6 +3,7 @@ author = "Yubao"
 title = "机器人位姿描述"
 date = "2019-03-10"
 description = "机器人位姿描述"
+image = "img/cover.jpg"
 toc = true
 tags = [
     "Robotics",

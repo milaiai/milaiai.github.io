@@ -40,7 +40,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://yubaoliu.github.io/blog-milaiai/post/ch1-environment/</guid>
-      <description>机器人开发环境介绍 In this blog, I will tintroduce: the usage case of robots the development environment for simulation (Python + conda) Robot Introduction Soccer match: Human support robot: Note: you can find these videos on https://space.bilibili.com/52620240 too. Environment Deployment (optional) Anyconda or other virtual Python environment Jupyter notebook You can refer https://www.ybliu.com/2021/01/OpenCV-Python-Development.html to deploy a conda-based development environment. Test Environment Run jupyter notebook</description>
+      <description>机器人开发环境介绍 In this blog, I will tintroduce: the usage case of robots the development environment for simulation (Python + conda) ![robot-world-coordinate.png](img/ch1-Environment setment/robot-world-coordinate.png) Robot Introduction Soccer match: Human support robot: Note: you can find these videos on https://space.bilibili.com/52620240 too. Environment Deployment (optional) Anyconda or other virtual Python environment Jupyter notebook You can refer https://www.ybliu.com/2021/01/OpenCV-Python-Development.html to deploy a conda-based development environment. Test Environment Run</description>
     </item>
     
     <item>
@@ -85,7 +85,7 @@
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://yubaoliu.github.io/blog-milaiai/about/</guid>
-      <description></description>
+      <description>Robotics, SLAM, Self-drving, and AR</description>
     </item>
     
     <item>

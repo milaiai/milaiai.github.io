@@ -3,6 +3,7 @@ author = "Yubao"
 title = "绘制Landmark"
 date = "2019-03-10"
 description = "绘制Landmark"
+image = "img/cover.jpg"
 tags = [
     "Robotics",
 ]
