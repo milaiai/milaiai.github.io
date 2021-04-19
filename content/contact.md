@@ -1,9 +1,9 @@
 ---
 title: "Contact"
-description: "Hugo, the world's fastest framework for building websites"
+description: "About me"
 date: 2019-02-30
 aliases: ["contact"]
-author: "Hugo Authors"
+author: "Yubao"
 ---
 
 {{< rawhtml >}}
