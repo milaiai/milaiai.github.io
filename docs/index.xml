@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MILAI AI</title>
-    <link>https://milaiai.github.io/</link>
+    <link>https://milaiai.com/</link>
     <description>Recent content on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://milaiai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://milaiai.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://milaiai.github.io/archives/</link>
+      <link>https://milaiai.com/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://milaiai.github.io/archives/</guid>
+      <guid>https://milaiai.com/archives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://milaiai.github.io/about/</link>
+      <link>https://milaiai.com/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://milaiai.github.io/about/</guid>
+      <guid>https://milaiai.com/about/</guid>
       <description>Robotics, SLAM, Self-drving, and AR</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://milaiai.github.io/contact/</link>
+      <link>https://milaiai.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://milaiai.github.io/contact/</guid>
+      <guid>https://milaiai.com/contact/</guid>
       <description> To contact us, please fill out the form below.
        </description>
     </item>
