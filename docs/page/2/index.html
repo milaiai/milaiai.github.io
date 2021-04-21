@@ -245,6 +245,21 @@
                 href="https://github.com/opera7133/Blonde" class="hover:text-gray-500">Blonde</a>.</p>
     </div>
     <script src="/js/switch.js"></script>
+
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js' type='text/javascript'>    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"],
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$','$'] ],
+                   displayMath: [ ['$$','$$']  ],
+                   processEscapes: true
+                  },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });</script>
 </footer>
 </div>
 </body>
