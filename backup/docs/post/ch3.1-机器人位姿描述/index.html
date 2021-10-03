@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131527698-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131527698-4');
+</script>
+
+<title>MILAI AI | 机器人位姿描述</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="MILAI AI">
+    
+    <meta name="description" content="机器人位姿描述">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="MILAI AI | 机器人位姿描述" />
+    
+    
+        
+        <link rel="stylesheet" href="https://milaiai.com/css/styles.css" integrity="">
+    
+    <link id="dark-mode-theme" rel="stylesheet" href="/css/darker.min.css" async disabled>
+    <link href="/css/blonde.min.css" rel="stylesheet" type="text/css" media="print"
+        onload="this.media='all'">
+    
+
+
+
+<meta name="description" content="机器人位姿描述">
+<meta property="og:site_name" content="MILAI AI">
+<meta property="og:description" content="机器人位姿描述">
+<meta property="og:url" content="https://milaiai.com/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://milaiai.com/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/">
+
+<meta name="twitter:description" content="机器人位姿描述">
+<meta property="article:published_time" content="2019-03-10T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2019-03-10T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="https://milaiai.com/img/cover.jpg">
+<meta property="og:image:url" content="https://milaiai.com/img/cover.jpg">
+    
+
+    
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100"><div class="bg-gray-800">
+    <div class="container mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <a href="https://milaiai.com/"><span
+                        class="font-semibold text-2xl tracking-tight">MILAI AI</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <a id="dark-mode-toggle-1" href="javascript:void(0);" class="no-underline text-white mr-2"><span
+                            id="dark-mode-toggle-icon1"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2" aria-label="Darkmode Toggle Button"></span></a>
+                    <span class="text-gray-300">|</span>
+                </div>
+                <button id="hamburgerbtn"
+                    class="flex items-center px-3 py-1 text-gray-300 hover:text-white">
+                    <span class="icon-menu text-2xl" aria-label="Hamburger Button"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-gray-400 invisible md:visible">
+                    <span>|</span>
+                    <a id="dark-mode-toggle-2" href="javascript:void(0);" class="no-underline hover:text-white"><span
+                            id="dark-mode-toggle-icon2"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2"></span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container mx-auto mt-4 flex-grow" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+    <div class="bg-white col-span-3 lg:col-span-2 p-5">
+        <h1 class="title text-4xl">机器人位姿描述</h1>
+        <aside id="meta">
+            <div>
+                <section>
+                    <h4 id="date"><span class="icon-access_time mr-1"></span>2019/03/10 </h4>
+                </section>
+                
+                <div id="tags">
+                    <span class="icon-local_offer mr-1"></span>
+                    
+                    <a href="https://milaiai.com/%20tags/robotics">Robotics</a> |
+                    
+                </div>
+                
+            </div>
+        </aside>
+        
+        <img class="my-4" src="https://milaiai.com/img/cover.jpg">
+        
+        <div class="content"><h1 id="objective">Objective</h1>
+<ul>
+<li>绘制世界坐标系</li>
+<li>如何描述机器人的位姿</li>
+<li>如何绘制世界坐标系</li>
+<li>如何绘制机器人位姿</li>
+</ul>
+<p>可参考：3.2.2 ロボットの姿勢と描く</p>
+<h1 id="対向２輪ロボットdifferential-wheeled-robot">対向２輪ロボット(Differential wheeled robot)</h1>
+<p><img src="https://github.com/ryuichiueda/LNPR_SLIDES/raw/master/figs/robot_vels.jpg" alt="robot_vels"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yubaoliu/assets@image/robot-pose-draw.png" alt=""></p>
+<h1 id="机器人位姿">机器人位姿</h1>
+<ul>
+<li>
+<p>世界坐标系记为 $\Sigma_{world}$</p>
+</li>
+<li>
+<p><strong>位姿 (状态)</strong>：位置和朝向 $x = (x, y, \theta)^T$</p>
+</li>
+<li>
+<p><strong>状态空间</strong>： 姿势（状态）的集合</p>
+</li>
+</ul>
+<p>位姿x所有可能的取值的集合$\chi$，例如平面上的长方形的范围内自由移动的机器人位姿的状态空间为：</p>
+<p>$$
+\chi = { x=(x, y, \theta)^T | x \in [x_{min}, x_{max}], y \in [y_{min}, y_{max}], \theta \in [- \pi, \pi) }
+$$</p>
+<h1 id="source-code">Source Code</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+<span style="color:#f92672">import</span> matplotlib.patches <span style="color:#66d9ef">as</span> patches
+<span style="color:#f92672">import</span> math
+<span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">World</span>:
+  <span style="color:#66d9ef">def</span> __init__(self):
+    self<span style="color:#f92672">.</span>objects <span style="color:#f92672">=</span> []
+
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">append</span>(self, obj):
+    self<span style="color:#f92672">.</span>objects<span style="color:#f92672">.</span>append(obj)
+  
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw</span>(self):
+    fig <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">8</span>))
+    ax <span style="color:#f92672">=</span> fig<span style="color:#f92672">.</span>add_subplot(<span style="color:#ae81ff">111</span>)
+    ax<span style="color:#f92672">.</span>set_aspect(<span style="color:#e6db74">&#39;equal&#39;</span>)
+    ax<span style="color:#f92672">.</span>set_xlim(<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>)
+    ax<span style="color:#f92672">.</span>set_ylim(<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>)
+    ax<span style="color:#f92672">.</span>set_xlabel(<span style="color:#e6db74">&#34;X&#34;</span>, fontsize<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>)
+    ax<span style="color:#f92672">.</span>set_ylabel(<span style="color:#e6db74">&#34;Y&#34;</span>, fontsize<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>)
+
+    <span style="color:#66d9ef">for</span> obj <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>objects:
+      obj<span style="color:#f92672">.</span>draw(ax)
+      
+    plt<span style="color:#f92672">.</span>show()
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IdealRobot</span>:
+  <span style="color:#66d9ef">def</span> __init__(self, pose, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span>):
+    self<span style="color:#f92672">.</span>pose <span style="color:#f92672">=</span> pose <span style="color:#f92672">//</span>位姿
+    self<span style="color:#f92672">.</span>r <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span> <span style="color:#f92672">//</span> 半径
+    self<span style="color:#f92672">.</span>color <span style="color:#f92672">=</span> color <span style="color:#f92672">//</span> 顡色
+
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw</span>(self, ax):
+    x, y, theta <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>pose
+    xn <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>r <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>cos(theta)
+    yn <span style="color:#f92672">=</span> y <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>r <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>sin(theta)
+    ax<span style="color:#f92672">.</span>plot([x, xn], [y, yn], color<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>color)
+    c <span style="color:#f92672">=</span> patches<span style="color:#f92672">.</span>Circle(xy<span style="color:#f92672">=</span>(x,y), radius<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>r, fill<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, color<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>color)
+    ax<span style="color:#f92672">.</span>add_patch(c)
+
+world <span style="color:#f92672">=</span> World()
+
+robot1 <span style="color:#f92672">=</span> IdealRobot(np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, math<span style="color:#f92672">.</span>pi<span style="color:#f92672">/</span><span style="color:#ae81ff">6</span>])<span style="color:#f92672">.</span>T)
+robot2 <span style="color:#f92672">=</span> IdealRobot(np<span style="color:#f92672">.</span>array([<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, math<span style="color:#f92672">.</span>pi<span style="color:#f92672">/</span><span style="color:#ae81ff">5</span><span style="color:#f92672">*</span><span style="color:#ae81ff">6</span>])<span style="color:#f92672">.</span>T, <span style="color:#e6db74">&#34;red&#34;</span>)
+world<span style="color:#f92672">.</span>append(robot1)
+world<span style="color:#f92672">.</span>append(robot2)
+
+world<span style="color:#f92672">.</span>draw()
+</code></pre></div><h1 id="references">References</h1>
+<ul>
+<li><a href="https://www.amazon.co.jp/dp/B082SN3VTD/?coliid=I1T5BBZ5JOPFG3&amp;colid=2PX05DH2XJNX&amp;psc=0&amp;ref_=lv_ov_lig_dp_it">詳解　確率ロボティクス　Ｐｙｔｈｏｎによる基礎アルゴリズムの実装</a></li>
+</ul>
+</div>
+        <hr class="py-2">
+        <aside id="meta">
+            
+            <div class="grid grid-cols-2">
+                <div class="col-span-1">
+                    
+                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/ch1-environment/">
+                        <div class="bg-gray-200 h-auto m-3 text-center py-3 lg:py-1">
+                            &lt; 机器人开发环境介绍
+                        </div>
+                    </a>
+                    
+                </div>
+                
+                <a class="next lg:text-2xl" href="https://milaiai.com/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/">
+                    <div class="col-span-1 bg-gray-200 h-auto m-3 text-center py-3 lg:py-1">
+                        Agent引擎的实现 &gt;
+                    </div>
+                </a>
+                
+            </div>
+        </aside>
+        <hr class="py-2">
+        <div class="mb-3">
+            
+        </div>
+    </div>
+    <div class="hidden lg:block lg:col-span-1">
+        
+        
+<div class="bg-white panel mb-3">
+    <p class="text-xl text-center text-gray-700 py-3 px-3">Archives</p>
+    
+    
+    <a class="text-center block py-2 px-4 duration-100 bg-white text-gray-800 hover:bg-gray-200"
+        href="https://milaiai.com//archives/2019/03">2019/03 (7)</a>
+    
+    
+</div>
+
+        
+
+
+        
+
+<div class="bg-white panel mb-3">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3">Tags</p>
+    <div class="panel-block p-2">
+        <a href="/tags/robotics">
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900">
+                robotics
+            </span></a>
+    </div>
+</div>
+
+
+
+        
+    </div>
+</div>
+
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+    
+    <div class="container mr-auto ml-auto">
+        <p>&copy; 2021 <a href="https://milaiai.com/" class="hover:text-gray-500">MILAI AI</a></p>
+        <p>Powered by <a href="https://gohugo.io/" class="hover:text-gray-500">Hugo</a>, Theme <a
+                href="https://github.com/opera7133/Blonde" class="hover:text-gray-500">Blonde</a>.</p>
+    </div>
+    <script src="/js/switch.js"></script>
+
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js' type='text/javascript'>    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"],
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$','$'] ],
+                   displayMath: [ ['$$','$$']  ],
+                   processEscapes: true
+                  },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });</script>
+</footer>
+</div>
+</body>
+
+</html>

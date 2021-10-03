@@ -20,6 +20,8 @@ googleAnalytics = "UA-131527698-4"
 
 publishDir = "docs"
 
+# ignoreErrors = ["error-remote-getjson"]
+
 [params]
 # The number of articles to be displayed on a single page.
 paginator_pages = "5"

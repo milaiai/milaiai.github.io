@@ -29,7 +29,7 @@
     
     
         
-        <link rel="stylesheet" href="https://milaiai.com/css/styles.min.c302353c3086631f32069b3e98821c6d919eea87f5a18104327bdf8e9389d8e4.css" integrity="sha256-wwI1PDCGYx8yBps+mIIcbZGe6of1oYEEMnvfjpOJ2OQ=">
+        <link rel="stylesheet" href="https://milaiai.com/css/styles.min.8ab2adc338a838d71c380fcb7bc12a41ab122bdf0aa3c309dd1b08324c4641cd.css" integrity="sha256-irKtwzioONccOA/Le8EqQasSK98Ko8MJ3RsIMkxGQc0=">
     
     <link id="dark-mode-theme" rel="stylesheet" href="/css/darker.min.css" async disabled>
     <link href="/css/blonde.min.css" rel="stylesheet" type="text/css" media="print"
@@ -132,27 +132,32 @@
 <div class="container mx-auto mt-4 flex-grow" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
-    <div class="bg-white col-span-3 lg:col-span-2 p-5">
-        <h1 class="title text-4xl">机器人位姿描述</h1>
-        <aside id="meta">
-            <div>
-                <section>
-                    <h4 id="date"><span class="icon-access_time mr-1"></span>2019/03/10 </h4>
-                </section>
-                
-                <div id="tags">
-                    <span class="icon-local_offer mr-1"></span>
+    
+    <div class="col-span-3 dark:text-white">
+    
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <h1 class="title text-4xl">机器人位姿描述</h1>
+            <hr class="my-2">
+            <aside id="meta">
+                <div>
+                    <section>
+                        <h4 id="date"><span class="icon-access_time mr-2"></span>2019/03/10 </h4>
+                    </section>
                     
-                    <a href="https://milaiai.com/%20tags/robotics">Robotics</a> |
+                    <div id="tags">
+                        <span class="icon-local_offer mr-1"></span>
+                        
+                        <a href="https://milaiai.com/tags/robotics">Robotics</a> |
+                        
+                    </div>
                     
                 </div>
-                
-            </div>
-        </aside>
-        
-        <img class="my-4" src="https://milaiai.com/img/cover.jpg">
-        
-        <div class="content"><h1 id="objective">Objective</h1>
+            </aside>
+            <hr class="my-2">
+            
+            <img class="py-4" src="https://milaiai.com/img/cover.jpg">
+            
+            <div class="content mt-5"><h1 id="objective">Objective</h1>
 <ul>
 <li>绘制世界坐标系</li>
 <li>如何描述机器人的位姿</li>
@@ -180,10 +185,10 @@
 \chi = { x=(x, y, \theta)^T | x \in [x_{min}, x_{max}], y \in [y_{min}, y_{max}], \theta \in [- \pi, \pi) }
 $$</p>
 <h1 id="source-code">Source Code</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
-<span style="color:#f92672">import</span> matplotlib.patches <span style="color:#f92672">as</span> patches
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+<span style="color:#f92672">import</span> matplotlib.patches <span style="color:#66d9ef">as</span> patches
 <span style="color:#f92672">import</span> math
-<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+<span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">World</span>:
   <span style="color:#66d9ef">def</span> __init__(self):
@@ -208,16 +213,16 @@ $$</p>
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IdealRobot</span>:
   <span style="color:#66d9ef">def</span> __init__(self, pose, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span>):
-    self<span style="color:#f92672">.</span>pose <span style="color:#f92672">=</span> pose <span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">位姿</span>
-    self<span style="color:#f92672">.</span>r <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span> <span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">半径</span>
-    self<span style="color:#f92672">.</span>color <span style="color:#f92672">=</span> color <span style="color:#f92672">//</span> <span style="color:#960050;background-color:#1e0010">顡色</span>
+    self<span style="color:#f92672">.</span>pose <span style="color:#f92672">=</span> pose <span style="color:#f92672">//</span>位姿
+    self<span style="color:#f92672">.</span>r <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span> <span style="color:#f92672">//</span> 半径
+    self<span style="color:#f92672">.</span>color <span style="color:#f92672">=</span> color <span style="color:#f92672">//</span> 顡色
 
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw</span>(self, ax):
     x, y, theta <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>pose
     xn <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>r <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>cos(theta)
     yn <span style="color:#f92672">=</span> y <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>r <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>sin(theta)
     ax<span style="color:#f92672">.</span>plot([x, xn], [y, yn], color<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>color)
-    c <span style="color:#f92672">=</span> patches<span style="color:#f92672">.</span>Circle(xy<span style="color:#f92672">=</span>(x,y), radius<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>r, fill<span style="color:#f92672">=</span>False, color<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>color)
+    c <span style="color:#f92672">=</span> patches<span style="color:#f92672">.</span>Circle(xy<span style="color:#f92672">=</span>(x,y), radius<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>r, fill<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, color<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>color)
     ax<span style="color:#f92672">.</span>add_patch(c)
 
 world <span style="color:#f92672">=</span> World()
@@ -233,66 +238,39 @@ world<span style="color:#f92672">.</span>draw()
 <li><a href="https://www.amazon.co.jp/dp/B082SN3VTD/?coliid=I1T5BBZ5JOPFG3&amp;colid=2PX05DH2XJNX&amp;psc=0&amp;ref_=lv_ov_lig_dp_it">詳解　確率ロボティクス　Ｐｙｔｈｏｎによる基礎アルゴリズムの実装</a></li>
 </ul>
 </div>
-        <hr class="py-2">
-        <aside id="meta">
-            
+            <aside id="meta">
+                
+            </aside>
+            </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
             <div class="grid grid-cols-2">
                 <div class="col-span-1">
                     
                     <a class="previous lg:text-2xl" href="https://milaiai.com/post/ch1-environment/">
-                        <div class="bg-gray-200 h-auto m-3 text-center py-3 lg:py-1">
-                            &lt; 机器人开发环境介绍
+                        <div
+                            class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                            <span class="icon-keyboard_arrow_left"></span> 机器人开发环境介绍
                         </div>
                     </a>
                     
                 </div>
                 
                 <a class="next lg:text-2xl" href="https://milaiai.com/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/">
-                    <div class="col-span-1 bg-gray-200 h-auto m-3 text-center py-3 lg:py-1">
-                        Agent引擎的实现 &gt;
+                    <div
+                        class="transition-colors duration-300 col-span-1 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                        Agent引擎的实现 <span class="icon-keyboard_arrow_right"></span>
                     </div>
                 </a>
                 
             </div>
-        </aside>
-        <hr class="py-2">
-        <div class="mb-3">
-            
+        </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <div class="mb-3">
+                
+            </div>
         </div>
     </div>
-    <div class="hidden lg:block lg:col-span-1">
-        
-        
-<div class="bg-white panel mb-3">
-    <p class="text-xl text-center text-gray-700 py-3 px-3">Archives</p>
     
-    
-    <a class="text-center block py-2 px-4 duration-100 bg-white text-gray-800 hover:bg-gray-200"
-        href="https://milaiai.com//archives/2019/03">2019/03 (7)</a>
-    
-    
-</div>
-
-        
-
-
-        
-
-<div class="bg-white panel mb-3">
-    <p class="text-xl text-center text-gray-700 py-3 pl-3">Tags</p>
-    <div class="panel-block p-2">
-        <a href="/tags/robotics">
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900">
-                robotics
-            </span></a>
-    </div>
-</div>
-
-
-
-        
-    </div>
 </div>
 
             </div>

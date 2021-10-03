@@ -29,7 +29,7 @@
     
     
         
-        <link rel="stylesheet" href="https://milaiai.com/css/styles.min.c302353c3086631f32069b3e98821c6d919eea87f5a18104327bdf8e9389d8e4.css" integrity="sha256-wwI1PDCGYx8yBps+mIIcbZGe6of1oYEEMnvfjpOJ2OQ=">
+        <link rel="stylesheet" href="https://milaiai.com/css/styles.min.8ab2adc338a838d71c380fcb7bc12a41ab122bdf0aa3c309dd1b08324c4641cd.css" integrity="sha256-irKtwzioONccOA/Le8EqQasSK98Ko8MJ3RsIMkxGQc0=">
     
     <link id="dark-mode-theme" rel="stylesheet" href="/css/darker.min.css" async disabled>
     <link href="/css/blonde.min.css" rel="stylesheet" type="text/css" media="print"
@@ -132,27 +132,32 @@
 <div class="container mx-auto mt-4 flex-grow" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
-    <div class="bg-white col-span-3 lg:col-span-2 p-5">
-        <h1 class="title text-4xl">运动方程</h1>
-        <aside id="meta">
-            <div>
-                <section>
-                    <h4 id="date"><span class="icon-access_time mr-1"></span>2019/03/10 </h4>
-                </section>
-                
-                <div id="tags">
-                    <span class="icon-local_offer mr-1"></span>
+    
+    <div class="col-span-3 dark:text-white">
+    
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <h1 class="title text-4xl">运动方程</h1>
+            <hr class="my-2">
+            <aside id="meta">
+                <div>
+                    <section>
+                        <h4 id="date"><span class="icon-access_time mr-2"></span>2019/03/10 </h4>
+                    </section>
                     
-                    <a href="https://milaiai.com/%20tags/robotics">Robotics</a> |
+                    <div id="tags">
+                        <span class="icon-local_offer mr-1"></span>
+                        
+                        <a href="https://milaiai.com/tags/robotics">Robotics</a> |
+                        
+                    </div>
                     
                 </div>
-                
-            </div>
-        </aside>
-        
-        <img class="my-4" src="https://milaiai.com/img/cover.jpg">
-        
-        <div class="content"><h1 id="内容">内容</h1>
+            </aside>
+            <hr class="my-2">
+            
+            <img class="py-4" src="https://milaiai.com/img/cover.jpg">
+            
+            <div class="content mt-5"><h1 id="内容">内容</h1>
 <ul>
 <li>运动方程，</li>
 <li>控制命令，</li>
@@ -243,21 +248,21 @@ $$</p>
 <p>状態遷移関数</p>
 <p>$x_t = f(x_{t-1}, u_t),  (t= 1,2, 3,&hellip;)$</p>
 <h1 id="example">Example</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">%</span>matplotlib inline
-<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
-<span style="color:#f92672">import</span> matplotlib.patches <span style="color:#f92672">as</span> patches
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">%</span>matplotlib inline
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+<span style="color:#f92672">import</span> matplotlib.patches <span style="color:#66d9ef">as</span> patches
 <span style="color:#f92672">import</span> math
-<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+<span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
 
 <span style="color:#75715e"># Animation</span>
 <span style="color:#f92672">import</span> matplotlib
 matplotlib<span style="color:#f92672">.</span>use(<span style="color:#e6db74">&#39;nbagg&#39;</span>)
-<span style="color:#f92672">import</span> matplotlib.animation <span style="color:#f92672">as</span> anm
+<span style="color:#f92672">import</span> matplotlib.animation <span style="color:#66d9ef">as</span> anm
 <span style="color:#f92672">from</span> matplotlib <span style="color:#f92672">import</span> rc
 
 <span style="color:#f92672">%</span>matplotlib inline
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">World</span>:
-  <span style="color:#66d9ef">def</span> __init__(self, debug<span style="color:#f92672">=</span>False):
+  <span style="color:#66d9ef">def</span> __init__(self, debug<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>):
     self<span style="color:#f92672">.</span>objects <span style="color:#f92672">=</span> []
     self<span style="color:#f92672">.</span>debug <span style="color:#f92672">=</span> debug
 
@@ -282,7 +287,7 @@ matplotlib<span style="color:#f92672">.</span>use(<span style="color:#e6db74">&#
       <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1000</span>):
         self<span style="color:#f92672">.</span>one_step(i, elems, ax)
     <span style="color:#66d9ef">else</span>:
-      ani <span style="color:#f92672">=</span> anm<span style="color:#f92672">.</span>FuncAnimation(fig, self<span style="color:#f92672">.</span>one_step, fargs<span style="color:#f92672">=</span>(elems, ax), frames<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, interval<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>, repeat<span style="color:#f92672">=</span>False )
+      ani <span style="color:#f92672">=</span> anm<span style="color:#f92672">.</span>FuncAnimation(fig, self<span style="color:#f92672">.</span>one_step, fargs<span style="color:#f92672">=</span>(elems, ax), frames<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, interval<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>, repeat<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span> )
       plt<span style="color:#f92672">.</span>show()
 
 
@@ -304,7 +309,7 @@ matplotlib<span style="color:#f92672">.</span>use(<span style="color:#e6db74">&#
     xn <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>r <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>cos(theta)
     yn <span style="color:#f92672">=</span> y <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>r <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>sin(theta)
     elems <span style="color:#f92672">+=</span> ax<span style="color:#f92672">.</span>plot([x, xn], [y, yn], color<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>color)
-    c <span style="color:#f92672">=</span> patches<span style="color:#f92672">.</span>Circle(xy<span style="color:#f92672">=</span>(x,y), radius<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>r, fill<span style="color:#f92672">=</span>False, color<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>color)
+    c <span style="color:#f92672">=</span> patches<span style="color:#f92672">.</span>Circle(xy<span style="color:#f92672">=</span>(x,y), radius<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>r, fill<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, color<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>color)
     elems<span style="color:#f92672">.</span>append(ax<span style="color:#f92672">.</span>add_patch(c))
 
   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">state_transition</span>(self, v_t, w_t, delta_t):
@@ -322,7 +327,7 @@ matplotlib<span style="color:#f92672">.</span>use(<span style="color:#e6db74">&#
 
 
 <span style="color:#f92672">%</span>matplotlib inline
-world <span style="color:#f92672">=</span> World(debug<span style="color:#f92672">=</span>False)
+world <span style="color:#f92672">=</span> World(debug<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 
 robot1 <span style="color:#f92672">=</span> IdealRobot(np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, math<span style="color:#f92672">.</span>pi<span style="color:#f92672">/</span><span style="color:#ae81ff">5</span><span style="color:#f92672">*</span><span style="color:#ae81ff">6</span>])<span style="color:#f92672">.</span>T)
 robot2 <span style="color:#f92672">=</span> IdealRobot(np<span style="color:#f92672">.</span>array([<span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>, math<span style="color:#f92672">.</span>pi<span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>])<span style="color:#f92672">.</span>T, <span style="color:#e6db74">&#34;red&#34;</span>)
@@ -335,60 +340,32 @@ world<span style="color:#f92672">.</span>draw()
 rc(<span style="color:#e6db74">&#39;animation&#39;</span>, html<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;jshtml&#39;</span>)
 ani    <span style="color:#75715e"># or HTML(anim.to_jshtml()</span>
 </code></pre></div></div>
-        <hr class="py-2">
-        <aside id="meta">
-            
+            <aside id="meta">
+                
+            </aside>
+            </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
             <div class="grid grid-cols-2">
                 <div class="col-span-1">
                     
                 </div>
                 
                 <a class="next lg:text-2xl" href="https://milaiai.com/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/">
-                    <div class="col-span-1 bg-gray-200 h-auto m-3 text-center py-3 lg:py-1">
-                        绘制Landmark &gt;
+                    <div
+                        class="transition-colors duration-300 col-span-1 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                        绘制Landmark <span class="icon-keyboard_arrow_right"></span>
                     </div>
                 </a>
                 
             </div>
-        </aside>
-        <hr class="py-2">
-        <div class="mb-3">
-            
+        </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <div class="mb-3">
+                
+            </div>
         </div>
     </div>
-    <div class="hidden lg:block lg:col-span-1">
-        
-        
-<div class="bg-white panel mb-3">
-    <p class="text-xl text-center text-gray-700 py-3 px-3">Archives</p>
     
-    
-    <a class="text-center block py-2 px-4 duration-100 bg-white text-gray-800 hover:bg-gray-200"
-        href="https://milaiai.com//archives/2019/03">2019/03 (7)</a>
-    
-    
-</div>
-
-        
-
-
-        
-
-<div class="bg-white panel mb-3">
-    <p class="text-xl text-center text-gray-700 py-3 pl-3">Tags</p>
-    <div class="panel-block p-2">
-        <a href="/tags/robotics">
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900">
-                robotics
-            </span></a>
-    </div>
-</div>
-
-
-
-        
-    </div>
 </div>
 
             </div>

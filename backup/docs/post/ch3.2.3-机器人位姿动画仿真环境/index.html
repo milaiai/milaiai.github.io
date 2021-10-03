@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131527698-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131527698-4');
+</script>
+
+<title>MILAI AI | 用动画来绘制Robot仿真环境</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="MILAI AI">
+    
+    <meta name="description" content="用动画来绘制Robot仿真环境">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="MILAI AI | 用动画来绘制Robot仿真环境" />
+    
+    
+        
+        <link rel="stylesheet" href="https://milaiai.com/css/styles.css" integrity="">
+    
+    <link id="dark-mode-theme" rel="stylesheet" href="/css/darker.min.css" async disabled>
+    <link href="/css/blonde.min.css" rel="stylesheet" type="text/css" media="print"
+        onload="this.media='all'">
+    
+
+
+
+<meta name="description" content="用动画来绘制Robot仿真环境">
+<meta property="og:site_name" content="MILAI AI">
+<meta property="og:description" content="用动画来绘制Robot仿真环境">
+<meta property="og:url" content="https://milaiai.com/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://milaiai.com/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/">
+
+<meta name="twitter:description" content="用动画来绘制Robot仿真环境">
+<meta property="article:published_time" content="2019-03-10T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2019-03-10T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="https://milaiai.com/img/cover.jpg">
+<meta property="og:image:url" content="https://milaiai.com/img/cover.jpg">
+    
+
+    
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100"><div class="bg-gray-800">
+    <div class="container mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <a href="https://milaiai.com/"><span
+                        class="font-semibold text-2xl tracking-tight">MILAI AI</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <a id="dark-mode-toggle-1" href="javascript:void(0);" class="no-underline text-white mr-2"><span
+                            id="dark-mode-toggle-icon1"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2" aria-label="Darkmode Toggle Button"></span></a>
+                    <span class="text-gray-300">|</span>
+                </div>
+                <button id="hamburgerbtn"
+                    class="flex items-center px-3 py-1 text-gray-300 hover:text-white">
+                    <span class="icon-menu text-2xl" aria-label="Hamburger Button"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-gray-400 invisible md:visible">
+                    <span>|</span>
+                    <a id="dark-mode-toggle-2" href="javascript:void(0);" class="no-underline hover:text-white"><span
+                            id="dark-mode-toggle-icon2"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2"></span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container mx-auto mt-4 flex-grow" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+    <div class="bg-white col-span-3 lg:col-span-2 p-5">
+        <h1 class="title text-4xl">用动画来绘制Robot仿真环境</h1>
+        <aside id="meta">
+            <div>
+                <section>
+                    <h4 id="date"><span class="icon-access_time mr-1"></span>2019/03/10 </h4>
+                </section>
+                
+                <div id="tags">
+                    <span class="icon-local_offer mr-1"></span>
+                    
+                    <a href="https://milaiai.com/%20tags/robotics">Robotics</a> |
+                    
+                </div>
+                
+            </div>
+        </aside>
+        
+        <img class="my-4" src="https://milaiai.com/img/cover.jpg">
+        
+        <div class="content"><h1 id="objective">Objective</h1>
+<ul>
+<li>用动画来绘制Robot仿真环境</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/yubaoliu/assets@image/robot_world_animation.gif" alt="robot_world_animation"></p>
+<h1 id="重要函数">重要函数</h1>
+<h2 id="matplotlibanimationfuncanimation">matplotlib.animation.FuncAnimation</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">matplotlib</span><span style="color:#f92672">.</span>animation<span style="color:#f92672">.</span>FuncAnimation(fig, func, frames<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, init_func<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, fargs<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, save_count<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, <span style="color:#f92672">*</span>, cache_frame_data<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, <span style="color:#f92672">**</span>kwargs)[source]
+</code></pre></div><ul>
+<li>intervalnumber, optional
+Delay between frames in milliseconds. Defaults to 200.</li>
+<li>frames
+iterable, int, generator function, or None, optional</li>
+<li>fargstuple or None, optional
+Additional arguments to pass to each call to func.</li>
+</ul>
+<p>Refer <a href="https://matplotlib.org/api/_as_gen/matplotlib.animation.FuncAnimation.html">https://matplotlib.org/api/_as_gen/matplotlib.animation.FuncAnimation.html</a> for detail.</p>
+<h3 id="matplotlibpyplotplo">matplotlib.pyplot.plo</h3>
+<ul>
+<li><a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot">https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">matplotlib<span style="color:#f92672">.</span>pyplot<span style="color:#f92672">.</span>plot(<span style="color:#f92672">*</span>args, scalex<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, scaley<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, data<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, <span style="color:#f92672">**</span>kwargs)
+</code></pre></div><p>注意其返回值为： lines
+A list of Line2D objects representing the plotted data.
+是一个列表对象。</p>
+<h1 id="笔记">笔记</h1>
+<ul>
+<li>one_step の引数は、ステップの番号iと，描くする図形のリストelems，サブプロットaxです。</li>
+<li>anm.FuncAnimationに渡している引数は，順に図のオブジェクトのfig, 1ステップ時刻をすすめるメソッドone_step、one_stepに渡している引数、描くする総ステップ数frame、ステップの周期interval　（単位ms）, 繰り返し再生するかどうかのフラグrepeatです。</li>
+<li><code>elems += ax.plot([x, xn], [y, yn], color=self.color)</code>　ここで、appendでなくリスト同士の足しさんになっているのは、ax.plotがリストを返してくるからです。ax.plotの返すリストのオブジェクトリストは、matplotlib.lines.Line2Dという型を持っています。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ax<span style="color:#f92672">.</span>add_patch(c)
+</code></pre></div><p>は matplotlib.patches.Circleという型のオブジェクトを単体で返してきますので、これはappendします。</p>
+<ul>
+<li>今のシミュレーションでは一秒ごとにコマを書き換えしました。あるコマの時刻をt、次のコマの時刻をt+1などと表記します。
+这里是用的离散的时间表示的，与实际是不同的。</li>
+</ul>
+<h1 id="examples">Examples</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">%</span>matplotlib inline
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+<span style="color:#f92672">import</span> matplotlib.patches <span style="color:#66d9ef">as</span> patches
+<span style="color:#f92672">import</span> math
+<span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+
+<span style="color:#75715e"># Animation</span>
+<span style="color:#f92672">import</span> matplotlib
+matplotlib<span style="color:#f92672">.</span>use(<span style="color:#e6db74">&#39;nbagg&#39;</span>)
+<span style="color:#f92672">import</span> matplotlib.animation <span style="color:#66d9ef">as</span> anm
+<span style="color:#f92672">from</span> matplotlib <span style="color:#f92672">import</span> rc
+
+<span style="color:#f92672">%</span>matplotlib inline
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">World</span>:
+  <span style="color:#66d9ef">def</span> __init__(self, debug<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>):
+    self<span style="color:#f92672">.</span>objects <span style="color:#f92672">=</span> []
+    self<span style="color:#f92672">.</span>debug <span style="color:#f92672">=</span> debug
+
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">append</span>(self, obj):
+    self<span style="color:#f92672">.</span>objects<span style="color:#f92672">.</span>append(obj)
+  
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw</span>(self):
+    <span style="color:#66d9ef">global</span> ani
+    fig <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>))
+    plt<span style="color:#f92672">.</span>close()
+    ax <span style="color:#f92672">=</span> fig<span style="color:#f92672">.</span>add_subplot(<span style="color:#ae81ff">111</span>)
+    ax<span style="color:#f92672">.</span>set_aspect(<span style="color:#e6db74">&#39;equal&#39;</span>)
+    ax<span style="color:#f92672">.</span>set_xlim(<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>)
+    ax<span style="color:#f92672">.</span>set_ylim(<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>)
+    ax<span style="color:#f92672">.</span>set_xlabel(<span style="color:#e6db74">&#34;X&#34;</span>, fontsize<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>)
+    ax<span style="color:#f92672">.</span>set_ylabel(<span style="color:#e6db74">&#34;Y&#34;</span>, fontsize<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>)
+
+    elems <span style="color:#f92672">=</span> []
+
+
+    <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>debug:
+      <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1000</span>):
+        self<span style="color:#f92672">.</span>one_step(i, elems, ax)
+    <span style="color:#66d9ef">else</span>:
+      ani <span style="color:#f92672">=</span> anm<span style="color:#f92672">.</span>FuncAnimation(fig, self<span style="color:#f92672">.</span>one_step, fargs<span style="color:#f92672">=</span>(elems, ax), frames<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, interval<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>, repeat<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span> )
+      plt<span style="color:#f92672">.</span>show()
+
+
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">one_step</span>(self, i, elems, ax):
+    <span style="color:#66d9ef">while</span> elems: elems<span style="color:#f92672">.</span>pop()<span style="color:#f92672">.</span>remove()
+    elems<span style="color:#f92672">.</span>append(ax<span style="color:#f92672">.</span>text(<span style="color:#f92672">-</span><span style="color:#ae81ff">4.4</span>, <span style="color:#ae81ff">4.5</span>, <span style="color:#e6db74">&#34;t=&#34;</span><span style="color:#f92672">+</span>str(i), fontsize<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>) )
+    <span style="color:#66d9ef">for</span> obj <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>objects:
+      obj<span style="color:#f92672">.</span>draw(ax, elems)
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IdealRobot</span>:
+  <span style="color:#66d9ef">def</span> __init__(self, pose, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span>):
+    self<span style="color:#f92672">.</span>pose <span style="color:#f92672">=</span> pose
+    self<span style="color:#f92672">.</span>r <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>
+    self<span style="color:#f92672">.</span>color <span style="color:#f92672">=</span> color
+
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw</span>(self, ax, elems):
+    x, y, theta <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>pose
+    xn <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>r <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>cos(theta)
+    yn <span style="color:#f92672">=</span> y <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>r <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>sin(theta)
+    elems <span style="color:#f92672">+=</span> ax<span style="color:#f92672">.</span>plot([x, xn], [y, yn], color<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>color)
+    c <span style="color:#f92672">=</span> patches<span style="color:#f92672">.</span>Circle(xy<span style="color:#f92672">=</span>(x,y), radius<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>r, fill<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, color<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>color)
+    elems<span style="color:#f92672">.</span>append(ax<span style="color:#f92672">.</span>add_patch(c))
+
+<span style="color:#f92672">%</span>matplotlib inline
+world <span style="color:#f92672">=</span> World(debug<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+
+robot1 <span style="color:#f92672">=</span> IdealRobot(np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, math<span style="color:#f92672">.</span>pi<span style="color:#f92672">/</span><span style="color:#ae81ff">6</span>])<span style="color:#f92672">.</span>T)
+robot2 <span style="color:#f92672">=</span> IdealRobot(np<span style="color:#f92672">.</span>array([<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, math<span style="color:#f92672">.</span>pi<span style="color:#f92672">/</span><span style="color:#ae81ff">5</span><span style="color:#f92672">*</span><span style="color:#ae81ff">6</span>])<span style="color:#f92672">.</span>T, <span style="color:#e6db74">&#34;red&#34;</span>)
+world<span style="color:#f92672">.</span>append(robot1)
+world<span style="color:#f92672">.</span>append(robot2)
+
+world<span style="color:#f92672">.</span>draw()
+
+<span style="color:#75715e"># this is needed to show animation whithin colab</span>
+rc(<span style="color:#e6db74">&#39;animation&#39;</span>, html<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;jshtml&#39;</span>)
+ani    <span style="color:#75715e"># or HTML(anim.to_jshtml()</span>
+</code></pre></div></div>
+        <hr class="py-2">
+        <aside id="meta">
+            
+            <div class="grid grid-cols-2">
+                <div class="col-span-1">
+                    
+                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/">
+                        <div class="bg-gray-200 h-auto m-3 text-center py-3 lg:py-1">
+                            &lt; 绘制Landmark
+                        </div>
+                    </a>
+                    
+                </div>
+                
+                <a class="next lg:text-2xl" href="https://milaiai.com/post/%E6%A6%82%E7%8E%87%E6%9C%BA%E5%99%A8%E4%BA%BA-%E8%B5%84%E6%96%99/">
+                    <div class="col-span-1 bg-gray-200 h-auto m-3 text-center py-3 lg:py-1">
+                        概率机器人资料 &gt;
+                    </div>
+                </a>
+                
+            </div>
+        </aside>
+        <hr class="py-2">
+        <div class="mb-3">
+            
+        </div>
+    </div>
+    <div class="hidden lg:block lg:col-span-1">
+        
+        
+<div class="bg-white panel mb-3">
+    <p class="text-xl text-center text-gray-700 py-3 px-3">Archives</p>
+    
+    
+    <a class="text-center block py-2 px-4 duration-100 bg-white text-gray-800 hover:bg-gray-200"
+        href="https://milaiai.com//archives/2019/03">2019/03 (7)</a>
+    
+    
+</div>
+
+        
+
+
+        
+
+<div class="bg-white panel mb-3">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3">Tags</p>
+    <div class="panel-block p-2">
+        <a href="/tags/robotics">
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900">
+                robotics
+            </span></a>
+    </div>
+</div>
+
+
+
+        
+    </div>
+</div>
+
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+    
+    <div class="container mr-auto ml-auto">
+        <p>&copy; 2021 <a href="https://milaiai.com/" class="hover:text-gray-500">MILAI AI</a></p>
+        <p>Powered by <a href="https://gohugo.io/" class="hover:text-gray-500">Hugo</a>, Theme <a
+                href="https://github.com/opera7133/Blonde" class="hover:text-gray-500">Blonde</a>.</p>
+    </div>
+    <script src="/js/switch.js"></script>
+
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js' type='text/javascript'>    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"],
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$','$'] ],
+                   displayMath: [ ['$$','$$']  ],
+                   processEscapes: true
+                  },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });</script>
+</footer>
+</div>
+</body>
+
+</html>
