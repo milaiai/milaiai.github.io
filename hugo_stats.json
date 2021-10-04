@@ -17,6 +17,7 @@
       "head",
       "hr",
       "html",
+      "iframe",
       "img",
       "input",
       "li",
@@ -186,7 +187,6 @@
     ],
     "ids": [
       "add-vitual-env-to-notebook",
-      "books",
       "content",
       "dark-mode-theme",
       "dark-mode-toggle-1",

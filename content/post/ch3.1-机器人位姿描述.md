@@ -28,7 +28,7 @@ archives = ["2019/03"]
 
 
 
-![](https://cdn.jsdelivr.net/gh/yubaoliu/assets@image/robot-pose-draw.png)
+
 
 # 机器人位姿
 
@@ -97,6 +97,10 @@ world.append(robot2)
 
 world.draw()
 ```
+
+![](https://cdn.jsdelivr.net/gh/yubaoliu/assets@image/robot-pose-draw.png)
+
+
 
 # References
 

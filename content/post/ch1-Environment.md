@@ -3,22 +3,31 @@ author = "Yubao"
 title = "机器人开发环境介绍"
 date = "2019-03-10"
 description = "机器人开发环境介绍"
-image =  "img/cover.jpg"
+image =  "img/robot-world-coordinate.png"
 tags = [
     "Robotics",
 ]
 archives = ["2019/03"]
+
 +++
 
 
 # 机器人开发环境介绍
 
-In this blog, I will tintroduce:
+In this section, we will tintroduce:
 
 1. the usage case of robots
 2. the development environment for simulation (Python + conda)
 
-![robot-world-coordinate.png](img/ch1-Environment setment/robot-world-coordinate.png)
+# 概率机器人详解
+
+概率机器人详解 [Homepage](https://b.ueda.tech/?page=lnpr)
+
+课件: [ryuichiueda/LNPR_SLIDES](https://github.com/ryuichiueda/LNPR_SLIDES)
+
+原书代码:  [ryuichiueda/LNPR_BOOK_CODES](https://github.com/ryuichiueda/LNPR_BOOK_CODES)
+
+My source code: https://github.com/yubaoliu/Probabilistic-Robotics.git
 
 # Robot Introduction
 
@@ -59,6 +68,8 @@ jupyter notebook
 ```
 
 # Draw world coordinate
+
+![](https://github.com/ryuichiueda/LNPR_SLIDES/blob/master/figs/world.png?raw=true)
 
 Source code:
 

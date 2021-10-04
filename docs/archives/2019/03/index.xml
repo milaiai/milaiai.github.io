@@ -30,16 +30,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/ch1-environment/</guid>
-      <description>机器人开发环境介绍 In this blog, I will tintroduce: the usage case of robots the development environment for simulation (Python + conda) ![robot-world-coordinate.png](img/ch1-Environment setment/robot-world-coordinate.png) Robot Introduction Soccer match: Human support robot: Note: you can find these videos on https://space.bilibili.com/52620240 too. Environment Deployment (optional) Anyconda or other virtual Python environment Jupyter notebook You can refer https://www.ybliu.com/2021/01/OpenCV-Python-Development.html to deploy a conda-based development environment. Test Environment Run</description>
-    </item>
-    
-    <item>
-      <title>概率机器人资料</title>
-      <link>https://milaiai.com/post/%E6%A6%82%E7%8E%87%E6%9C%BA%E5%99%A8%E4%BA%BA-%E8%B5%84%E6%96%99/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://milaiai.com/post/%E6%A6%82%E7%8E%87%E6%9C%BA%E5%99%A8%E4%BA%BA-%E8%B5%84%E6%96%99/</guid>
-      <description>Books 概率机器人详解 Homepage ryuichiueda/LNPR_SLIDES ryuichiueda/LNPR_BOOK_CODES</description>
+      <description>机器人开发环境介绍 In this section, we will tintroduce: the usage case of robots the development environment for simulation (Python + conda) 概率机器人详解 概率机器人详解 Homepage 课件: ryuichiueda/LNPR_SLIDES 原书代码: ryuichiueda/LNPR_BOOK_CODES My source code: https://github.com/yubaoliu/Probabilistic-Robotics.git Robot Introduction Soccer match: Human support robot: Note: you can find these videos</description>
     </item>
     
     <item>

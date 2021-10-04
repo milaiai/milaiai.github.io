@@ -29,7 +29,7 @@
     
     
         
-        <link rel="stylesheet" href="https://milaiai.com/css/styles.min.8ab2adc338a838d71c380fcb7bc12a41ab122bdf0aa3c309dd1b08324c4641cd.css" integrity="sha256-irKtwzioONccOA/Le8EqQasSK98Ko8MJ3RsIMkxGQc0=">
+        <link rel="stylesheet" href="https://milaiai.com/css/styles.min.1a7bbf75fd47ec88bf18d8eb9257e993e6a6a85d9fcfa4cad0455a0558817c23.css" integrity="sha256-Gnu/df1H7Ii/GNjrklfpk+amqF2fz6TK0EVaBViBfCM=">
     
     <link id="dark-mode-theme" rel="stylesheet" href="/css/darker.min.css" async disabled>
     <link href="/css/blonde.min.css" rel="stylesheet" type="text/css" media="print"
@@ -58,8 +58,8 @@
 
 
     
-<meta property="og:image" content="https://milaiai.com/img/cover.jpg">
-<meta property="og:image:url" content="https://milaiai.com/img/cover.jpg">
+<meta property="og:image" content="https://milaiai.com/img/robot-world-coordinate.png">
+<meta property="og:image:url" content="https://milaiai.com/img/robot-world-coordinate.png">
     
 
     
@@ -155,20 +155,24 @@
             </aside>
             <hr class="my-2">
             
-            <img class="py-4" src="https://milaiai.com/img/cover.jpg">
+            <img class="py-4" src="https://milaiai.com/img/robot-world-coordinate.png">
             
             <div class="content mt-5"><h1 id="机器人开发环境介绍">机器人开发环境介绍</h1>
-<p>In this blog, I will tintroduce:</p>
+<p>In this section, we will tintroduce:</p>
 <ol>
 <li>the usage case of robots</li>
 <li>the development environment for simulation (Python + conda)</li>
 </ol>
-<p>![robot-world-coordinate.png](img/ch1-Environment setment/robot-world-coordinate.png)</p>
+<h1 id="概率机器人详解">概率机器人详解</h1>
+<p>概率机器人详解 <a href="https://b.ueda.tech/?page=lnpr">Homepage</a></p>
+<p>课件: <a href="https://github.com/ryuichiueda/LNPR_SLIDES">ryuichiueda/LNPR_SLIDES</a></p>
+<p>原书代码:  <a href="https://github.com/ryuichiueda/LNPR_BOOK_CODES">ryuichiueda/LNPR_BOOK_CODES</a></p>
+<p>My source code: <a href="https://github.com/yubaoliu/Probabilistic-Robotics.git">https://github.com/yubaoliu/Probabilistic-Robotics.git</a></p>
 <h1 id="robot-introduction">Robot Introduction</h1>
 <p>Soccer match:</p>
-<!-- raw HTML omitted -->
+<iframe width="640" height="480" src="https://www.youtube.com/embed/WuXJ6PxEbNM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>Human support robot:</p>
-<!-- raw HTML omitted -->
+<iframe width="640" height="480" src="https://www.youtube.com/embed/dnHwkP_-tOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>Note:  you can find these videos on <a href="https://space.bilibili.com/52620240">https://space.bilibili.com/52620240</a> too.</p>
 <h1 id="environment-deployment">Environment Deployment</h1>
 <ul>
@@ -176,7 +180,7 @@
 <li>Jupyter notebook</li>
 </ul>
 <p>You can refer <a href="https://www.ybliu.com/2021/01/OpenCV-Python-Development.html">https://www.ybliu.com/2021/01/OpenCV-Python-Development.html</a> to deploy a conda-based development environment.</p>
-<!-- raw HTML omitted -->
+<iframe src="//player.bilibili.com/player.html?aid=586392884&bvid=BV1Mz4y1D7QJ&cid=289217789&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="620" height="640"> </iframe>
 <h1 id="test-environment">Test Environment</h1>
 <h2 id="run-jupyter-notebook">Run jupyter notebook</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">jupyter notebook
@@ -186,6 +190,7 @@ python -m ipykernel install --user --name<span style="color:#f92672">=</span>rob
 
 jupyter notebook
 </code></pre></div><h1 id="draw-world-coordinate">Draw world coordinate</h1>
+<p><img src="https://github.com/ryuichiueda/LNPR_SLIDES/blob/master/figs/world.png?raw=true" alt=""></p>
 <p>Source code:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">import matplotlib.pyplot as plt
 
@@ -212,10 +217,10 @@ world.draw<span style="color:#f92672">()</span>
             <div class="grid grid-cols-2">
                 <div class="col-span-1">
                     
-                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/%E6%A6%82%E7%8E%87%E6%9C%BA%E5%99%A8%E4%BA%BA-%E8%B5%84%E6%96%99/">
+                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/">
                         <div
                             class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
-                            <span class="icon-keyboard_arrow_left"></span> 概率机器人资料
+                            <span class="icon-keyboard_arrow_left"></span> 用动画来绘制Robot仿真环境
                         </div>
                     </a>
                     
