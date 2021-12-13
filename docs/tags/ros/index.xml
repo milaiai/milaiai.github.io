@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ROS on MILAI AI</title>
+    <link>https://milaiai.com/tags/ros/</link>
+    <description>Recent content in ROS on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/ros/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ROS Installation</title>
+      <link>https://milaiai.com/post/ros-installation/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/ros-installation/</guid>
+      <description>rosdep update Error Message:
+Warning: running &amp;#39;rosdep update&amp;#39; as root is not recommended. You should run &amp;#39;sudo rosdep fix-permissions&amp;#39; and invoke &amp;#39;rosdep update&amp;#39; again without sudo. ERROR: error loading sources list: (&amp;#39;The read operation timed out&amp;#39;,) reading in sources list data from /etc/ros/rosdep/sources.list.d Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/base.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/python.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/ruby.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/releases/fuerte.yaml Query rosdistro index https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml Skip end-of-life distro &amp;#34;ardent&amp;#34; Skip end-of-life distro &amp;#34;bouncy&amp;#34; Skip end-of-life distro &amp;#34;crystal&amp;#34; Skip end-of-life distro &amp;#34;dashing&amp;#34; Skip end-of-life distro &amp;#34;eloquent&amp;#34; Add distro &amp;#34;foxy&amp;#34; ERROR: Service &amp;#39;rdsslam&amp;#39; failed to build: The command &amp;#39;/bin/sh -c rosdep update&amp;#39; returned a non-zero code: 1 ``` </description>
+    </item>
+    
+  </channel>
+</rss>

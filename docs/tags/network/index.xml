@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on MILAI AI</title>
+    <link>https://milaiai.com/tags/network/</link>
+    <description>Recent content in Network on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network</title>
+      <link>https://milaiai.com/post/network/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/network/</guid>
+      <description>DNS vim /etc/resolv.conf nameserver 8.8.8.8 nameserver 8.8.4.4 github rosdep update 超时失败2021最新解决方法 GitHub Proxy: https://ghproxy.com/ APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; }</description>
+    </item>
+    
+  </channel>
+</rss>

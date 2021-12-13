@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DeepLearning on MILAI AI</title>
+    <link>https://milaiai.com/tags/deeplearning/</link>
+    <description>Recent content in DeepLearning on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>深度学习</title>
+      <link>https://milaiai.com/post/deeplearning/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/deeplearning/</guid>
+      <description>Environment Setup !pip install numpy scipy matplotlib ipython scikit-learn pandas pillow Introduction to Artificial Neural Network Activation Function Step function import numpy as np import matplotlib.pylab as plt def step_function(x): return np.array(x&amp;gt;0, dtype=np.int) x = np.arange(-5.0, 5.0, 0.1) y = step_function(x) plt.plot(x, y) plt.ylim(-0.1, 1.1) plt.show() Sigmoid Function import numpy as np import matplotlib.pylab as plt def sigmoid(x): return 1 / (1 + np.exp(-x)) # x = np.array([-1.0, 1.0, 2.0])</description>
+    </item>
+    
+  </channel>
+</rss>

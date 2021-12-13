@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131527698-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131527698-4');
+</script>
+
+<title>MILAI AI | 机器人概率基础</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="MILAI AI">
+    
+    <meta name="description" content="机器人概率基础">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="MILAI AI | 机器人概率基础" />
+    
+    
+        
+        <link rel="stylesheet" href="https://milaiai.com/css/styles.min.1a7bbf75fd47ec88bf18d8eb9257e993e6a6a85d9fcfa4cad0455a0558817c23.css" integrity="sha256-Gnu/df1H7Ii/GNjrklfpk+amqF2fz6TK0EVaBViBfCM=">
+    
+    <link id="dark-mode-theme" rel="stylesheet" href="/css/darker.min.css" async disabled>
+    <link href="/css/blonde.min.css" rel="stylesheet" type="text/css" media="print"
+        onload="this.media='all'">
+    
+
+
+
+<meta name="description" content="机器人概率基础">
+<meta property="og:site_name" content="MILAI AI">
+<meta property="og:description" content="机器人概率基础">
+<meta property="og:url" content="https://milaiai.com/post/ch2-probabilistics/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://milaiai.com/post/ch2-probabilistics/">
+
+<meta name="twitter:description" content="机器人概率基础">
+<meta property="article:published_time" content="2019-03-10T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2019-03-10T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="https://milaiai.com/img/cover.jpg">
+<meta property="og:image:url" content="https://milaiai.com/img/cover.jpg">
+    
+
+    
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100"><div class="bg-gray-800">
+    <div class="container mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <a href="https://milaiai.com/"><span
+                        class="font-semibold text-2xl tracking-tight">MILAI AI</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <a id="dark-mode-toggle-1" href="javascript:void(0);" class="no-underline text-white mr-2"><span
+                            id="dark-mode-toggle-icon1"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2" aria-label="Darkmode Toggle Button"></span></a>
+                    <span class="text-gray-300">|</span>
+                </div>
+                <button id="hamburgerbtn"
+                    class="flex items-center px-3 py-1 text-gray-300 hover:text-white">
+                    <span class="icon-menu text-2xl" aria-label="Hamburger Button"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-gray-400 invisible md:visible">
+                    <span>|</span>
+                    <a id="dark-mode-toggle-2" href="javascript:void(0);" class="no-underline hover:text-white"><span
+                            id="dark-mode-toggle-icon2"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2"></span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container mx-auto mt-4 flex-grow" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+    
+    <div class="col-span-3 dark:text-white">
+    
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <h1 class="title text-4xl">机器人概率基础</h1>
+            <hr class="my-2">
+            <aside id="meta">
+                <div>
+                    <section>
+                        <h4 id="date"><span class="icon-access_time mr-2"></span>2019/03/10 </h4>
+                    </section>
+                    
+                    <div id="tags">
+                        <span class="icon-local_offer mr-1"></span>
+                        
+                        <a href="https://milaiai.com/tags/robotics">Robotics</a> |
+                        
+                    </div>
+                    
+                </div>
+            </aside>
+            <hr class="my-2">
+            
+            <img class="py-4" src="https://milaiai.com/img/cover.jpg">
+            
+            <div class="content mt-5"><p><img src="https://github.com/ryuichiueda/LNPR_SLIDES/raw/39cbbb13e890b9dd0eecb09b5d4ec28f25aff61c/figs/sensor_experiment.jpg" alt=""></p>
+<h1 id="平均値">平均値</h1>
+<p>$$\mu = \frac{1}{N}\sum_{i=0}^{N-1} z_i$$</p>
+<ul>
+<li>$z_0, z_1, \dots, z_{N-1}$: センサ値</li>
+<li>$N$: センサ値の個数</li>
+</ul>
+<h1 id="分散標準偏差">分散、標準偏差</h1>
+<p>$$\sigma^2 = \frac{1}{N-1}\sum_{i=0}^{N-1} (z_i - \mu)^2 \quad (N&gt;1)$$</p>
+<h1 id="素朴な確率分布">(素朴な）確率分布</h1>
+<p>ここでやりたいこと: 度数分布から、
+未来にどんなセンサ値が得られそうかを予想</p>
+<ul>
+<li>ただし、集める個数によって値が変わってはいけないので度数分布を頻度でなく割合に * $P_{\textbf{z}\text{LiDAR}}(z) = N_z / N$　（$N_z$: センサの値が$z$だった頻度） * 全センサ値の種類に関して$P_{\textbf{z}\text{LiDAR}}(z)$を足し合わせると1に
+$P_{\textbf{z}\text{LiDAR}}(z)$を確率と呼びましょう</li>
+</ul>
+<h1 id="samples">Samples</h1>
+<p>draw:</p>
+<p>$$
+z \sim P_{\textbf{z}\text{LiDAR}}
+$$</p>
+<h1 id="probabilistic-model">Probabilistic Model</h1>
+<p><img src="https://github.com/ryuichiueda/LNPR_SLIDES/raw/39cbbb13e890b9dd0eecb09b5d4ec28f25aff61c/figs/sensor_200_histgram.png" alt=""></p>
+<p>ガウス分布の当てはめ</p>
+<p>连续的情况
+$$
+p(z | \mu, \sigma^2 ) = \frac{1}{\sqrt{2\pi}\sigma} e^{ - \frac{(z - \mu)^2}{2\sigma^2}}
+$$</p>
+<p>$$
+p(x | \mu, \sigma^2 )
+$$</p>
+<ul>
+<li>$\mu$: 平均値、$\sigma$: 標準偏差</li>
+</ul>
+<p><img src="https://github.com/ryuichiueda/LNPR_SLIDES/raw/39cbbb13e890b9dd0eecb09b5d4ec28f25aff61c/figs/gauss_200.png" alt=""></p>
+<h2 id="確率密度関数-probability-density-function-pdf">確率密度関数 Probability Density Function, PDF</h2>
+<p>ガウス分布からの確率の求め方: $p(x | \mu, \sigma^2 )$を積分
+$p$の値を密度と言う
+密度を積分すると確率に（体積と同じ）
+例
+センサの値が$210$より小さい確率: $P(z &lt; 210) = \int_{-\infty}^{210} p(z | \mu, \sigma^2 ) dz$
+センサの値が$210$: $P(z = 210) = \int_{-209.5}^{210.5} p(z | \mu, \sigma^2 ) dz$</p>
+<p>密度を返す関数$p$: 確率密度関数
+$p$の形状や$p$そのものも確率分布と呼ぶことがある
+ガウス分布は特に$\mathcal{N}$と表記される
+$$
+\mathcal{N}(z | \mu, \sigma^2 ), \mathcal{N}(\mu, \sigma^2)
+$$</p>
+<p>などと表記</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> norm
+
+zs <span style="color:#f92672">=</span> range(<span style="color:#ae81ff">190</span>, <span style="color:#ae81ff">230</span>)
+ys <span style="color:#f92672">=</span> [ norm<span style="color:#f92672">.</span>pdf(z, mu, stddev) <span style="color:#66d9ef">for</span> z <span style="color:#f92672">in</span> zs ]
+
+plt<span style="color:#f92672">.</span>plot(zs, ys)
+plt<span style="color:#f92672">.</span>show()
+</code></pre></div><h2 id="累積分布関数-cumulative-distribution-function-cdf">累積分布関数 Cumulative Distribution Function, CDF</h2>
+<p>$P(z &lt; a) = \int_{-\infty}^a p(z) dz$</p>
+<p>を累積分布関数と呼ぶ
+右図
+$P(a \le z &lt; b) = P(z &lt; b) - P(z &lt; a)$</p>
+<p><img src="https://github.com/ryuichiueda/LNPR_SLIDES/raw/39cbbb13e890b9dd0eecb09b5d4ec28f25aff61c/figs/cdf.png" alt=""></p>
+<h2 id="期待値">期待値</h2>
+<ul>
+<li>
+<p>期待値: 無限にセンサ値をドローしたときの平均値</p>
+<p>$\langle z \rangle_{P(z)}$、$\langle z \rangle_{p(z)}$と表現</p>
+</li>
+</ul>
+<p>$$
+\langle z \rangle_{P(z)} = \sum_{-\infty}^{\infty} zP(z)
+$$</p>
+<ul>
+<li>一般化した期待値
+$z$が$p(z)$に従うとき、$f(z)$の値はどうなる？</li>
+</ul>
+<p>$$
+\langle f(z) \rangle_{p(z)} = \int_{-\infty}^{\infty} f(z)p(z) dz
+$$</p>
+<p>期待値の性質</p>
+<p>線形性
+$\big\langle f(z) + \alpha g(z) \big\rangle_{p(z)} = \big\langle f(z) \big\rangle_{p(z)} + \alpha \big\langle g(z) \big\rangle_{p(z)}$
+$\big\langle f(z) + \alpha \big\rangle_{p(z)} = \big\langle f(z) \big\rangle_{p(z)} + \alpha \big\langle 1 \big\rangle_{p(z)} = \big\langle f(z) \big\rangle_{p(z)} + \alpha$</p>
+<p>平均値
+$\langle z \rangle_{p(z)} = \mu$、$\langle z - \mu \rangle_{p(z)} = 0$</p>
+<p>分散
+$\langle (z - \mu)^2 \rangle_{p(z)} = \sigma^2$
+　</p>
+</div>
+            <aside id="meta">
+                
+            </aside>
+            </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <div class="grid grid-cols-2">
+                <div class="col-span-1">
+                    
+                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                        <div
+                            class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                            <span class="icon-keyboard_arrow_left"></span> 机器学习
+                        </div>
+                    </a>
+                    
+                </div>
+                
+                <a class="next lg:text-2xl" href="https://milaiai.com/post/ch1-environment/">
+                    <div
+                        class="transition-colors duration-300 col-span-1 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                        机器人开发环境介绍 <span class="icon-keyboard_arrow_right"></span>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <div class="mb-3">
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+    
+    <div class="container mr-auto ml-auto">
+        <p>&copy; 2021 <a href="https://milaiai.com/" class="hover:text-gray-500">MILAI AI</a></p>
+        <p>Powered by <a href="https://gohugo.io/" class="hover:text-gray-500">Hugo</a>, Theme <a
+                href="https://github.com/opera7133/Blonde" class="hover:text-gray-500">Blonde</a>.</p>
+    </div>
+    <script src="/js/switch.js"></script>
+
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js' type='text/javascript'>    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"],
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$','$'] ],
+                   displayMath: [ ['$$','$$']  ],
+                   processEscapes: true
+                  },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });</script>
+</footer>
+</div>
+</body>
+
+</html>

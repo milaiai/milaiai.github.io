@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VIM on MILAI AI</title>
+    <link>https://milaiai.com/tags/vim/</link>
+    <description>Recent content in VIM on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ctags-VIM</title>
+      <link>https://milaiai.com/post/tags/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/tags/</guid>
+      <description>Shortcuts Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳转。 Ctrl+t or Ctrl + o: 跳转到前一次的tag处 Ctrl+w+]: 分割当前窗口，并且跳转到光标下的tag Ctags 查看ct</description>
+    </item>
+    
+  </channel>
+</rss>

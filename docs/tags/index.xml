@@ -8,11 +8,110 @@
     <language>en</language>
     <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Algorithm</title>
+      <link>https://milaiai.com/tags/algorithm/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cmake</title>
+      <link>https://milaiai.com/tags/cmake/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/cmake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DeepLearning</title>
+      <link>https://milaiai.com/tags/deeplearning/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/deeplearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MachineLearning</title>
+      <link>https://milaiai.com/tags/machinelearning/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/machinelearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>https://milaiai.com/tags/network/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ORB_SLAM3</title>
+      <link>https://milaiai.com/tags/orb_slam3/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/orb_slam3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://milaiai.com/tags/python/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReinforcementLearning</title>
+      <link>https://milaiai.com/tags/reinforcementlearning/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/reinforcementlearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Robotics</title>
       <link>https://milaiai.com/tags/robotics/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/tags/robotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ROS</title>
+      <link>https://milaiai.com/tags/ros/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/ros/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://milaiai.com/tags/tools/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VIM</title>
+      <link>https://milaiai.com/tags/vim/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/tags/vim/</guid>
       <description></description>
     </item>
     

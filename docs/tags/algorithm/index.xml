@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithm on MILAI AI</title>
+    <link>https://milaiai.com/tags/algorithm/</link>
+    <description>Recent content in Algorithm on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>算法-动态规划</title>
+      <link>https://milaiai.com/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
+      <description>在线测试 https://www.luogu.com.cn/ https://onlinejudge.org/ https://leetcode-cn.com/ 动态规划 斐波那契数 斐波那契数，通常用 F(n) 表示，形成的序列称为 斐波那契数列 。该数列由 0 和 1 开始，后面的每一项数字都是前面两项数字的</description>
+    </item>
+    
+    <item>
+      <title>算法-最短路径</title>
+      <link>https://milaiai.com/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</guid>
+      <description>最短路径 Dijkstra 算法 基于贪心的单源最短路算法，其要求图中的边全部非负。 Dijkstra’s shortest path algorithm 戴克斯特拉算法-wiki 算法描述 procedure Dijkstra</description>
+    </item>
+    
+  </channel>
+</rss>

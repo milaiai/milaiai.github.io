@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cmake on MILAI AI</title>
+    <link>https://milaiai.com/tags/cmake/</link>
+    <description>Recent content in Cmake on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/cmake/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cmake</title>
+      <link>https://milaiai.com/post/cmake/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/cmake/</guid>
+      <description>Sophus RUN git clone https://github.com/yubaoliu/Sophus.git \  &amp;amp;&amp;amp; cd Sophus \  &amp;amp;&amp;amp; git checkout master \  &amp;amp;&amp;amp; mkdir build \  &amp;amp;&amp;amp; cd build \  &amp;amp;&amp;amp; cmake .. -DCMAKE_BUILD_TYPE=Release \  &amp;amp;&amp;amp; make -j3 \  &amp;amp;&amp;amp; make install G2O RUN git clone https://github.com/yubaoliu/g2o.git \  &amp;amp;&amp;amp; cd g2o \  &amp;amp;&amp;amp; mkdir build \  &amp;amp;&amp;amp; cd build \  &amp;amp;&amp;amp; cmake .. -DCMAKE_BUILD_TYPE=Release \  &amp;amp;&amp;amp; make -j 3 \  &amp;amp;&amp;amp; make install </description>
+    </item>
+    
+  </channel>
+</rss>
