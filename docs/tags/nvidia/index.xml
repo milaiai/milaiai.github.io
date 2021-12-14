@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nvidia on MILAI AI</title>
+    <link>https://milaiai.com/tags/nvidia/</link>
+    <description>Recent content in Nvidia on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nvidia-cuda</title>
+      <link>https://milaiai.com/post/nvidia-cuda/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/nvidia-cuda/</guid>
+      <description>查看显卡计算能力 Compute Capability GeForce and TITAN Products Geforce RTX 3060 8.6 Check Nvidia version deviceQuery cd /usr/local/cuda-11.3/samples/1_Utilities/deviceQuery ./devicequery Copy to HOME folder to make if not maked before. ~./deviceQuery ./deviceQuery Starting... CUDA Device Query (Runtime API) version (CUDART static linking) Detected 1 CUDA Capable device(s) Device 0: &amp;#34;NVIDIA GeForce RTX 3060 Laptop GPU&amp;#34; CUDA Driver Version / Runtime Version 11.4 / 11.3 CUDA</description>
+    </item>
+    
+  </channel>
+</rss>

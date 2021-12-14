@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131527698-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131527698-4');
+</script>
+
+<title>MILAI AI | Nvidia-cuda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="MILAI AI">
+    
+    <meta name="description" content="Nvidia-cuda">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="MILAI AI | Nvidia-cuda" />
+    
+    
+        
+        <link rel="stylesheet" href="https://milaiai.com/css/styles.min.1a7bbf75fd47ec88bf18d8eb9257e993e6a6a85d9fcfa4cad0455a0558817c23.css" integrity="sha256-Gnu/df1H7Ii/GNjrklfpk+amqF2fz6TK0EVaBViBfCM=">
+    
+    <link id="dark-mode-theme" rel="stylesheet" href="/css/darker.min.css" async disabled>
+    <link href="/css/blonde.min.css" rel="stylesheet" type="text/css" media="print"
+        onload="this.media='all'">
+    
+
+
+
+<meta name="description" content="Nvidia-cuda">
+<meta property="og:site_name" content="MILAI AI">
+<meta property="og:description" content="Nvidia-cuda">
+<meta property="og:url" content="https://milaiai.com/post/nvidia-cuda/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://milaiai.com/post/nvidia-cuda/">
+
+<meta name="twitter:description" content="Nvidia-cuda">
+<meta property="article:published_time" content="2020-08-14T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2020-08-14T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="https://milaiai.com/img/cover.jpg">
+<meta property="og:image:url" content="https://milaiai.com/img/cover.jpg">
+    
+
+    
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100"><div class="bg-gray-800">
+    <div class="container mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <a href="https://milaiai.com/"><span
+                        class="font-semibold text-2xl tracking-tight">MILAI AI</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <a id="dark-mode-toggle-1" href="javascript:void(0);" class="no-underline text-white mr-2"><span
+                            id="dark-mode-toggle-icon1"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2" aria-label="Darkmode Toggle Button"></span></a>
+                    <span class="text-gray-300">|</span>
+                </div>
+                <button id="hamburgerbtn"
+                    class="flex items-center px-3 py-1 text-gray-300 hover:text-white">
+                    <span class="icon-menu text-2xl" aria-label="Hamburger Button"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-gray-400 invisible md:visible">
+                    <span>|</span>
+                    <a id="dark-mode-toggle-2" href="javascript:void(0);" class="no-underline hover:text-white"><span
+                            id="dark-mode-toggle-icon2"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2"></span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container mx-auto mt-4 flex-grow" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+    
+    <div class="col-span-3 dark:text-white">
+    
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <h1 class="title text-4xl">Nvidia-cuda</h1>
+            <hr class="my-2">
+            <aside id="meta">
+                <div>
+                    <section>
+                        <h4 id="date"><span class="icon-access_time mr-2"></span>2020/08/14 </h4>
+                    </section>
+                    
+                    <div id="tags">
+                        <span class="icon-local_offer mr-1"></span>
+                        
+                        <a href="https://milaiai.com/tags/nvidia">Nvidia</a> |
+                        
+                    </div>
+                    
+                </div>
+            </aside>
+            <hr class="my-2">
+            
+            <img class="py-4" src="https://milaiai.com/img/cover.jpg">
+            
+            <div class="content mt-5"><h1 id="查看显卡计算能力-compute-capability">查看显卡计算能力 Compute Capability</h1>
+<p><a href="https://developer.nvidia.com/cuda-gpus">GeForce and TITAN Products</a>
+Geforce RTX 3060	8.6</p>
+<h1 id="check-nvidia-version">Check Nvidia version</h1>
+<h2 id="devicequery">deviceQuery</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd /usr/local/cuda-11.3/samples/1_Utilities/deviceQuery
+
+./devicequery
+</code></pre></div><p>Copy to HOME folder to make if not maked before.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">~./deviceQuery
+./deviceQuery Starting...
+
+ CUDA Device Query <span style="color:#f92672">(</span>Runtime API<span style="color:#f92672">)</span> version <span style="color:#f92672">(</span>CUDART static linking<span style="color:#f92672">)</span>
+
+Detected <span style="color:#ae81ff">1</span> CUDA Capable device<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>
+
+Device 0: <span style="color:#e6db74">&#34;NVIDIA GeForce RTX 3060 Laptop GPU&#34;</span>
+  CUDA Driver Version / Runtime Version          11.4 / 11.3
+  CUDA Capability Major/Minor version number:    8.6
+  Total amount of global memory:                 <span style="color:#ae81ff">5947</span> MBytes <span style="color:#f92672">(</span><span style="color:#ae81ff">6235422720</span> bytes<span style="color:#f92672">)</span>
+  <span style="color:#f92672">(</span>030<span style="color:#f92672">)</span> Multiprocessors, <span style="color:#f92672">(</span>128<span style="color:#f92672">)</span> CUDA Cores/MP:    <span style="color:#ae81ff">3840</span> CUDA Cores
+  GPU Max Clock rate:                            <span style="color:#ae81ff">1702</span> MHz <span style="color:#f92672">(</span>1.70 GHz<span style="color:#f92672">)</span>
+  Memory Clock rate:                             <span style="color:#ae81ff">7001</span> Mhz
+  Memory Bus Width:                              192-bit
+  L2 Cache Size:                                 <span style="color:#ae81ff">3145728</span> bytes
+  Maximum Texture Dimension Size <span style="color:#f92672">(</span>x,y,z<span style="color:#f92672">)</span>         1D<span style="color:#f92672">=(</span>131072<span style="color:#f92672">)</span>, 2D<span style="color:#f92672">=(</span>131072, 65536<span style="color:#f92672">)</span>, 3D<span style="color:#f92672">=(</span>16384, 16384, 16384<span style="color:#f92672">)</span>
+  Maximum Layered 1D Texture Size, <span style="color:#f92672">(</span>num<span style="color:#f92672">)</span> layers  1D<span style="color:#f92672">=(</span>32768<span style="color:#f92672">)</span>, <span style="color:#ae81ff">2048</span> layers
+  Maximum Layered 2D Texture Size, <span style="color:#f92672">(</span>num<span style="color:#f92672">)</span> layers  2D<span style="color:#f92672">=(</span>32768, 32768<span style="color:#f92672">)</span>, <span style="color:#ae81ff">2048</span> layers
+  Total amount of constant memory:               <span style="color:#ae81ff">65536</span> bytes
+  Total amount of shared memory per block:       <span style="color:#ae81ff">49152</span> bytes
+  Total shared memory per multiprocessor:        <span style="color:#ae81ff">102400</span> bytes
+  Total number of registers available per block: <span style="color:#ae81ff">65536</span>
+  Warp size:                                     <span style="color:#ae81ff">32</span>
+  Maximum number of threads per multiprocessor:  <span style="color:#ae81ff">1536</span>
+  Maximum number of threads per block:           <span style="color:#ae81ff">1024</span>
+  Max dimension size of a thread block <span style="color:#f92672">(</span>x,y,z<span style="color:#f92672">)</span>: <span style="color:#f92672">(</span>1024, 1024, 64<span style="color:#f92672">)</span>
+  Max dimension size of a grid size    <span style="color:#f92672">(</span>x,y,z<span style="color:#f92672">)</span>: <span style="color:#f92672">(</span>2147483647, 65535, 65535<span style="color:#f92672">)</span>
+  Maximum memory pitch:                          <span style="color:#ae81ff">2147483647</span> bytes
+  Texture alignment:                             <span style="color:#ae81ff">512</span> bytes
+  Concurrent copy and kernel execution:          Yes with <span style="color:#ae81ff">2</span> copy engine<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Alignment requirement <span style="color:#66d9ef">for</span> Surfaces:            Yes
+  Device has ECC support:                        Disabled
+  Device supports Unified Addressing <span style="color:#f92672">(</span>UVA<span style="color:#f92672">)</span>:      Yes
+  Device supports Managed Memory:                Yes
+  Device supports Compute Preemption:            Yes
+  Supports Cooperative Kernel Launch:            Yes
+  Supports MultiDevice Co-op Kernel Launch:      Yes
+  Device PCI Domain ID / Bus ID / location ID:   <span style="color:#ae81ff">0</span> / <span style="color:#ae81ff">1</span> / <span style="color:#ae81ff">0</span>
+  Compute Mode:
+     &lt; Default <span style="color:#f92672">(</span>multiple host threads can use ::cudaSetDevice<span style="color:#f92672">()</span> with device simultaneously<span style="color:#f92672">)</span> &gt;
+
+deviceQuery, CUDA Driver <span style="color:#f92672">=</span> CUDART, CUDA Driver Version <span style="color:#f92672">=</span> 11.4, CUDA Runtime Version <span style="color:#f92672">=</span> 11.3, NumDevs <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+Result <span style="color:#f92672">=</span> PASS
+</code></pre></div><h2 id="nvidia-x-server-settings">NVIDIA X server settings</h2>
+<p><img src="https://linuxconfig.org/images/nvidia-check-version-application.png" alt="https://linuxconfig.org/images/nvidia-check-version-application.png"></p>
+<h2 id="lspci查看gpu型号">lspci查看GPU型号</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">~ lspci | grep -i nvidia
+01:00.0 VGA compatible controller: NVIDIA Corporation Device <span style="color:#ae81ff">2560</span> <span style="color:#f92672">(</span>rev a1<span style="color:#f92672">)</span>
+01:00.1 Audio device: NVIDIA Corporation Device 228e <span style="color:#f92672">(</span>rev a1<span style="color:#f92672">)</span>
+</code></pre></div><h2 id="nvidia-smi">nvidia-smi</h2>
+<p>Fan：显示风扇转速，数值在0到100%之间，是计算机的期望转速，如果计算机不是通过风扇冷却或者风扇坏了，显示出来就是N/A；
+Temp：显卡内部的温度，单位是摄氏度；
+Perf：表征性能状态，从P0到P12，P0表示最大性能，P12表示状态最小性能；
+Pwr：能耗表示；
+Bus-Id：涉及GPU总线的相关信息；
+Disp.A：是Display Active的意思，表示GPU的显示是否初始化；
+Memory Usage：显存的使用率；
+Volatile GPU-Util：浮动的GPU利用率；
+Compute M：计算模式；</p>
+<h2 id="check-driver-version">Check driver version</h2>
+<p>查看NVIDIA驱动版本</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"> ~ cat /proc/driver/nvidia/version
+ NVRM version: NVIDIA UNIX x86_64 Kernel Module  470.86  Tue Oct <span style="color:#ae81ff">26</span> 21:55:45 UTC <span style="color:#ae81ff">2021</span>
+ GCC version:  gcc version 8.4.0 <span style="color:#f92672">(</span>Ubuntu 8.4.0-3ubuntu2<span style="color:#f92672">)</span>
+</code></pre></div><p>OR</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">udo dpkg --list | grep nvidia-*
+<span style="color:#f92672">[</span>sudo<span style="color:#f92672">]</span> password <span style="color:#66d9ef">for</span> yubao:
+ii  libnvidia-cfg1-470:amd64                        470.86-0ubuntu0.20.04.1                    amd64        NVIDIA binary OpenGL/GLX configuration library
+ii  libnvidia-common-465                            470.86-0ubuntu0.20.04.1                    all          Transitional package <span style="color:#66d9ef">for</span> libnvidia-common-470
+ii  libnvidia-common-470                            470.86-0ubuntu0.20.04.1                    all          Shared files used by the NVIDIA libraries
+ii  libnvidia-compute-465:amd64                     470.86-0ubuntu0.20.04.1                    amd64        Transitional package <span style="color:#66d9ef">for</span> libnvidia-compute-470
+ii  libnvidia-compute-470:amd64                     470.86-0ubuntu0.20.04.1                    amd64        NVIDIA libcompute package
+ii  libnvidia-compute-470:i386                      470.86-0ubuntu0.20.04.1                    i386         NVIDIA libcompute package
+ii  libnvidia-container-tools                       1.7.0-1                                    amd64        NVIDIA container runtime library <span style="color:#f92672">(</span>command-line tools<span style="color:#f92672">)</span>
+ii  libnvidia-container1:amd64                      1.7.0-1                                    amd64        NVIDIA container runtime library
+
+</code></pre></div><h1 id="errors">Errors</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">F1213 06:10:43.716547   <span style="color:#ae81ff">365</span> im2col.cu:61<span style="color:#f92672">]</span> Check failed: error <span style="color:#f92672">==</span> cudaSuccess <span style="color:#f92672">(</span><span style="color:#ae81ff">209</span> vs. 0<span style="color:#f92672">)</span>  no kernel image is available <span style="color:#66d9ef">for</span> execution on the device
+*** Check failure stack trace: ***
+    @     0x7fe53d7a20cd  google::LogMessage::Fail<span style="color:#f92672">()</span>
+    @     0x7fe53d7a3f33  google::LogMessage::SendToLog<span style="color:#f92672">()</span>
+    @     0x7fe53d7a1c28  google::LogMessage::Flush<span style="color:#f92672">()</span>
+    @     0x7fe53d7a4999  google::LogMessageFatal::~LogMessageFatal<span style="color:#f92672">()</span>
+    @     0x7fe53a9c0e95  caffe::im2col_gpu&lt;&gt;<span style="color:#f92672">()</span>
+    @     0x7fe53a7bfeb6  caffe::BaseConvolutionLayer&lt;&gt;::conv_im2col_gpu<span style="color:#f92672">()</span>
+    @     0x7fe53a7bffb6  caffe::BaseConvolutionLayer&lt;&gt;::forward_gpu_gemm<span style="color:#f92672">()</span>
+    @     0x7fe53a971c41  caffe::ConvolutionLayer&lt;&gt;::Forward_gpu<span style="color:#f92672">()</span>
+    @     0x7fe53a8e5322  caffe::Net&lt;&gt;::ForwardFromTo<span style="color:#f92672">()</span>
+    @     0x7fe53a8e5437  caffe::Net&lt;&gt;::Forward<span style="color:#f92672">()</span>
+    @     0x7fe53e1d210a  Classifier::Predict<span style="color:#f92672">()</span>
+    @     0x7fe53e1c2549  segnet_ros::SegNet::SegmentImage<span style="color:#f92672">()</span>
+    @     0x7fe53e1c5088  segnet_ros::SegNet::Run<span style="color:#f92672">()</span>
+    @     0x7fe53b53ebcd  <span style="color:#f92672">(</span>unknown<span style="color:#f92672">)</span>
+    @     0x7fe53b3156db  start_thread
+    @     0x7fe53cf2571f  clone
+<span style="color:#f92672">[</span>segnet_action_server-2<span style="color:#f92672">]</span> process has died <span style="color:#f92672">[</span>pid 351, exit code -6, cmd /root/catkin_ws/devel/lib/segnet_ros/segnet_action_server __name:<span style="color:#f92672">=</span>segnet_action_server __log:<span style="color:#f92672">=</span>/root/.ros/log/5ff90f90-5bdb-11ec-be69-e02be97a7691/segnet_action_server-2.log<span style="color:#f92672">]</span>.
+log file: /root/.ros/log/5ff90f90-5bdb-11ec-be69-e02be97a7691/segnet_action_server-2*.log
+</code></pre></div><p>Solution:</p>
+<ul>
+<li>Check Your GPU Compute Capability
+<a href="https://developer.nvidia.com/cuda-gpus">Your GPU Compute Capability</a></li>
+<li>[ caffe运行错误： im2col.cu:61] Check failed: error == cudaSuccess (8 vs. 0) invalid device function](<a href="https://www.cnblogs.com/haiyang21/p/7381032.html">https://www.cnblogs.com/haiyang21/p/7381032.html</a>)</li>
+<li><a href="https://viencoding.com/article/216">error == cudaSuccess (209 vs. 0) no kernel image is available for execution on the device</a></li>
+<li><a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1290">Nvidia/Titan RTX Check failed: error == cudaSuccess (48 vs. 0) no kernel image is available for execution on the device 1290</a></li>
+</ul>
+<h1 id="references">References</h1>
+<ul>
+<li><a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html">NVIDIA CUDA Toolkit Release Notes</a></li>
+</ul>
+</div>
+            <aside id="meta">
+                
+            </aside>
+            </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <div class="grid grid-cols-2">
+                <div class="col-span-1">
+                    
+                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/">
+                        <div
+                            class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                            <span class="icon-keyboard_arrow_left"></span> Agent引擎的实现
+                        </div>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <div class="mb-3">
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+    
+    <div class="container mr-auto ml-auto">
+        <p>&copy; 2021 <a href="https://milaiai.com/" class="hover:text-gray-500">MILAI AI</a></p>
+        <p>Powered by <a href="https://gohugo.io/" class="hover:text-gray-500">Hugo</a>, Theme <a
+                href="https://github.com/opera7133/Blonde" class="hover:text-gray-500">Blonde</a>.</p>
+    </div>
+    <script src="/js/switch.js"></script>
+
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js' type='text/javascript'>    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"],
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$','$'] ],
+                   displayMath: [ ['$$','$$']  ],
+                   processEscapes: true
+                  },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });</script>
+</footer>
+</div>
+</body>
+
+</html>

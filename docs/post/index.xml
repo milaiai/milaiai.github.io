@@ -6,7 +6,16 @@
     <description>Recent content in Posts on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nvidia-cuda</title>
+      <link>https://milaiai.com/post/nvidia-cuda/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/nvidia-cuda/</guid>
+      <description>查看显卡计算能力 Compute Capability GeForce and TITAN Products Geforce RTX 3060 8.6 Check Nvidia version deviceQuery cd /usr/local/cuda-11.3/samples/1_Utilities/deviceQuery ./devicequery Copy to HOME folder to make if not maked before. ~./deviceQuery ./deviceQuery Starting... CUDA Device Query (Runtime API) version (CUDART static linking) Detected 1 CUDA Capable device(s) Device 0: &amp;#34;NVIDIA GeForce RTX 3060 Laptop GPU&amp;#34; CUDA Driver Version / Runtime Version 11.4 / 11.3 CUDA</description>
+    </item>
+    
     <item>
       <title>Agent引擎的实现</title>
       <link>https://milaiai.com/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
@@ -67,9 +76,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/python/</guid>
-      <description>Pip source list https://www.cnblogs.com/chenjo/p/14071864.html
-~/.pip/pip.conf
-[global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple [install] trusted-host=mirrors.aliyun.com </description>
+      <description>Pip source list https://www.cnblogs.com/chenjo/p/14071864.html ~/.pip/pip.conf [global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple [install] trusted-host=mirrors.aliyun.com Set source list for pip install pip install pymysql -i https://pypi.tuna.tsinghua.edu.cn/simple/ // 国内源 pip install 包名-i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com References pip安装包报错Could not find a version that satisfies the requirement pymysql (from versions: none)</description>
     </item>
     
     <item>

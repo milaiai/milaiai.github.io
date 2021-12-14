@@ -2,11 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://milaiai.com/</loc>
+    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/tags/nvidia/</loc>
+    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/post/nvidia-cuda/</loc>
+    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/post/</loc>
+    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/tags/</loc>
+    <lastmod>2020-08-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://milaiai.com/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://milaiai.com/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
@@ -44,9 +56,6 @@
     <loc>https://milaiai.com/post/orb-slam/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://milaiai.com/post/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://milaiai.com/tags/python/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -63,9 +72,6 @@
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/post/ros-installation/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://milaiai.com/tags/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/tags/tools/</loc>
@@ -114,6 +120,8 @@
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/archives/2019/03/</loc>
+  </url><url>
+    <loc>https://milaiai.com/archives/2020/08/</loc>
   </url><url>
     <loc>https://milaiai.com/archives/2021/12/</loc>
   </url><url>

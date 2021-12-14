@@ -3,7 +3,7 @@ author = "Yubao"
 title = "ORB_SLAM3"
 date = "2019-03-10"
 description = "ORB_SLAM3"
-image =  "img/robot-world-coordinate.png"
+image = "img/cover.jpg"
 tags = [
     "ORB_SLAM3",
 ]
