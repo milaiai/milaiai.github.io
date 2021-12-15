@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://milaiai.com/archives/2021/12/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>OpenCV</title>
+      <link>https://milaiai.com/post/opencv/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/opencv/</guid>
+      <description>Possible Errors fatal error: dynlink_nvcuvid.h: No such file or directory In file included from /home/yubao/Software/opencv/build/modules/cudacodec/opencv_cudacodec_pch_dephelp.cxx:1: /home/yubao/Software/opencv/modules/cudacodec/src/precomp.hpp:60:18: fatal error: dynlink_nvcuvid.h: No such file or directory 60 | #include &amp;lt;dynlink_nvcuvid.h&amp;gt; | ^~~~~~~~~~~~~~~~~~~ compilation terminated. cat modules/cudacodec/src/precomp.hpp #if CUDA_VERSION &amp;gt;= 9000 #include &amp;lt;dynlink_nvcuvid.h&amp;gt;#else #include &amp;lt;nvcuvid.h&amp;gt;#endif cuda10 does not provide dynlink_nvcuvid.h any more OpenCV CUDA 10 安装 dynlink_nvcuvid.h 问题解决方法 error: ‘CODEC_F</description>
+    </item>
+    
+    <item>
       <title>ORB_SLAM3</title>
       <link>https://milaiai.com/post/orb-slam/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
