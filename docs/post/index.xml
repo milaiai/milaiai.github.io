@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Docker Proxy Setting</title>
+      <link>https://milaiai.com/post/docker-proxy/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/docker-proxy/</guid>
+      <description>Sometimes we need to download the developping packages from the external Network when do the research. However, I found I cannot let docker access the proxy depoloyed on my host machine especially in the build stage, such as &amp;ldquo;docker-compose build&amp;rdquo;. Usually the proxy on the host can be used when the container is up (docker-compose up). Successful Configuration for &amp;ldquo;docker-compose build&amp;rdquo; Check the IP address on your host. Use the</description>
+    </item>
+    
+    <item>
       <title>Nvidia-cuda</title>
       <link>https://milaiai.com/post/nvidia-cuda/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>

@@ -188,7 +188,31 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/home/yubao/Software/opencv/modules/videoio/src/cap_ffmpeg_impl.hpp:1604:30: error: ‘AVFMT_RAWPICTURE’ was not declared in this scope
  <span style="color:#ae81ff">1604</span> |     <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>oc-&gt;oformat-&gt;flags &amp; AVFMT_RAWPICTURE<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#define AVFMT_RAWPICTURE 0x0020
-</span></code></pre></div><h1 id="references">References</h1>
+</span></code></pre></div><h2 id="char-str--pystring_asstringobj">char* str = PyString_AsString(obj)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/home/ai/yubao/opencv/modules/python/src2/cv2.cpp:652:1: warning: missing initializer <span style="color:#66d9ef">for</span> member ‘_typeobject::tp_print’ <span style="color:#f92672">[</span>-Wmissing-field-initializers<span style="color:#f92672">]</span>
+/home/ai/yubao/opencv/modules/python/src2/cv2.cpp: In <span style="color:#66d9ef">function</span> ‘bool pyopencv_to<span style="color:#f92672">(</span>PyObject*, T&amp;, const char*<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>with T <span style="color:#f92672">=</span> cv::String; PyObject <span style="color:#f92672">=</span> _object<span style="color:#f92672">]</span>’:
+/home/ai/yubao/opencv/modules/python/src2/cv2.cpp:856:34: error: invalid conversion from ‘const char*’ to ‘char*’ <span style="color:#f92672">[</span>-fpermissive<span style="color:#f92672">]</span>
+  <span style="color:#ae81ff">856</span> |     char* str <span style="color:#f92672">=</span> PyString_AsString<span style="color:#f92672">(</span>obj<span style="color:#f92672">)</span>;
+In file included from /home/ai/yubao/opencv/modules/python/src2/cv2.cpp:1498:
+/home/ai/yubao/opencv/build/modules/python3/pyopencv_generated_types.h: In <span style="color:#66d9ef">function</span> ‘bool pyopencv_to<span style="color:#f92672">(</span>PyObject*, T&amp;, const char*<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>with T <span style="color:#f92672">=</span> cv::FileNode; PyObject <span style="color:#f92672">=</span> _object<span style="color:#f92672">]</span>’:
+/home/ai/yubao/opencv/build/modules/python3/pyopencv_generated_types.h:1343:40: warning: implicitly-declared ‘constexpr cv::FileNode&amp; cv::FileNode::operator<span style="color:#f92672">=(</span>const cv::FileNode&amp;<span style="color:#f92672">)</span>’ is deprecated <span style="color:#f92672">[</span>-Wdeprecated-copy<span style="color:#f92672">]</span>
+ <span style="color:#ae81ff">1343</span> |     dst <span style="color:#f92672">=</span> <span style="color:#f92672">((</span>pyopencv_FileNode_t*<span style="color:#f92672">)</span>src<span style="color:#f92672">)</span>-&gt;v;
+</code></pre></div><p>Solution:</p>
+<p>vim /home/ai/yubao/opencv/modules/python/src2/cv2.cpp</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">template&lt;&gt;
+bool pyopencv_to<span style="color:#f92672">(</span>PyObject* obj, String&amp; value, const char* name<span style="color:#f92672">)</span>
+<span style="color:#f92672">{</span>
+    <span style="color:#f92672">(</span>void<span style="color:#f92672">)</span>name;
+    <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>!obj <span style="color:#f92672">||</span> obj <span style="color:#f92672">==</span> Py_None<span style="color:#f92672">)</span>
+        <span style="color:#66d9ef">return</span> true;
+    //char* str <span style="color:#f92672">=</span> PyString_AsString<span style="color:#f92672">(</span>obj<span style="color:#f92672">)</span>;
+    const char* str <span style="color:#f92672">=</span> PyString_AsString<span style="color:#f92672">(</span>obj<span style="color:#f92672">)</span>;
+    <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>!str<span style="color:#f92672">)</span>
+        <span style="color:#66d9ef">return</span> false;
+    value <span style="color:#f92672">=</span> String<span style="color:#f92672">(</span>str<span style="color:#f92672">)</span>;
+    <span style="color:#66d9ef">return</span> true;
+<span style="color:#f92672">}</span>
+</code></pre></div><h1 id="references">References</h1>
 </div>
             <aside id="meta">
                 
@@ -198,10 +222,10 @@
             <div class="grid grid-cols-2">
                 <div class="col-span-1">
                     
-                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/nvidia-cuda/">
+                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/docker-proxy/">
                         <div
                             class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
-                            <span class="icon-keyboard_arrow_left"></span> Nvidia-cuda
+                            <span class="icon-keyboard_arrow_left"></span> Docker Proxy Setting
                         </div>
                     </a>
                     
@@ -222,7 +246,7 @@
         </div><footer class="bg-gray-800 text-white p-6">
     
     <div class="container mr-auto ml-auto">
-        <p>&copy; 2021 <a href="https://milaiai.com/" class="hover:text-gray-500">MILAI AI</a></p>
+        <p>&copy; 2022 <a href="https://milaiai.com/" class="hover:text-gray-500">MILAI AI</a></p>
         <p>Powered by <a href="https://gohugo.io/" class="hover:text-gray-500">Hugo</a>, Theme <a
                 href="https://github.com/opera7133/Blonde" class="hover:text-gray-500">Blonde</a>.</p>
     </div>

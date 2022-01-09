@@ -67,4 +67,37 @@ vim modules/videoio/src/cap_ffmpeg_impl.hpp
 #define AVFMT_RAWPICTURE 0x0020
 ```
 
+## char* str = PyString_AsString(obj)
+
+```sh
+/home/ai/yubao/opencv/modules/python/src2/cv2.cpp:652:1: warning: missing initializer for member ‘_typeobject::tp_print’ [-Wmissing-field-initializers]
+/home/ai/yubao/opencv/modules/python/src2/cv2.cpp: In function ‘bool pyopencv_to(PyObject*, T&, const char*) [with T = cv::String; PyObject = _object]’:
+/home/ai/yubao/opencv/modules/python/src2/cv2.cpp:856:34: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+  856 |     char* str = PyString_AsString(obj);
+In file included from /home/ai/yubao/opencv/modules/python/src2/cv2.cpp:1498:
+/home/ai/yubao/opencv/build/modules/python3/pyopencv_generated_types.h: In function ‘bool pyopencv_to(PyObject*, T&, const char*) [with T = cv::FileNode; PyObject = _object]’:
+/home/ai/yubao/opencv/build/modules/python3/pyopencv_generated_types.h:1343:40: warning: implicitly-declared ‘constexpr cv::FileNode& cv::FileNode::operator=(const cv::FileNode&)’ is deprecated [-Wdeprecated-copy]
+ 1343 |     dst = ((pyopencv_FileNode_t*)src)->v;
+```
+
+Solution:
+
+vim /home/ai/yubao/opencv/modules/python/src2/cv2.cpp
+
+```sh
+template<>
+bool pyopencv_to(PyObject* obj, String& value, const char* name)
+{
+    (void)name;
+    if(!obj || obj == Py_None)
+        return true;
+    //char* str = PyString_AsString(obj);
+    const char* str = PyString_AsString(obj);
+    if(!str)
+        return false;
+    value = String(str);
+    return true;
+}
+```
+
 # References

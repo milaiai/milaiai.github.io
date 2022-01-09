@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docer on MILAI AI</title>
+    <link>https://milaiai.com/tags/docer/</link>
+    <description>Recent content in Docer on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/docer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Proxy Setting</title>
+      <link>https://milaiai.com/post/docker-proxy/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/docker-proxy/</guid>
+      <description>Sometimes we need to download the developping packages from the external Network when do the research. However, I found I cannot let docker access the proxy depoloyed on my host machine especially in the build stage, such as &amp;ldquo;docker-compose build&amp;rdquo;. Usually the proxy on the host can be used when the container is up (docker-compose up). Successful Configuration for &amp;ldquo;docker-compose build&amp;rdquo; Check the IP address on your host. Use the</description>
+    </item>
+    
+  </channel>
+</rss>
