@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2022/03 on MILAI AI</title>
+    <link>https://milaiai.com/archives/2022/03/</link>
+    <description>Recent content in 2022/03 on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://milaiai.com/archives/2022/03/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github使用技巧</title>
+      <link>https://milaiai.com/post/git/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/git/</guid>
+      <description>使用Github的方法 利用镜像下载 通过代理网站下载 Gitee中转fork仓库下载 修改 HOSTS 文件进行加速 科学上网 (略) 加速网站 https://gitclone.com/ ghproxy GitHub 文件加速 https://gh.api.99988866.xyz http://toolwa.com/github/ https://github.zhlh6.cn</description>
+    </item>
+    
+  </channel>
+</rss>

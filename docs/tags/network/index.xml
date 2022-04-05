@@ -13,7 +13,8 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/network/</guid>
-      <description>DNS vim /etc/resolv.conf nameserver 8.8.8.8 nameserver 8.8.4.4 github rosdep update 超时失败2021最新解决方法 GitHub Proxy: https://ghproxy.com/ APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; }</description>
+      <description>DNS vim /etc/resolv.conf
+nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; } </description>
     </item>
     
   </channel>

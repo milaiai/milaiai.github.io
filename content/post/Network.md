@@ -20,12 +20,6 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
 
-# github
-
-
-- [rosdep update 超时失败2021最新解决方法](https://blog.csdn.net/Kenny_GuanHua/article/details/116845781)
-- GitHub Proxy: https://ghproxy.com/
-
 
 # APT
 

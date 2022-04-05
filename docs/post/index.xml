@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Github使用技巧</title>
+      <link>https://milaiai.com/post/git/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/git/</guid>
+      <description>使用Github的方法 利用镜像下载 通过代理网站下载 Gitee中转fork仓库下载 修改 HOSTS 文件进行加速 科学上网 (略) 加速网站 https://gitclone.com/ ghproxy GitHub 文件加速 https://gh.api.99988866.xyz http://toolwa.com/github/ https://github.zhlh6.cn</description>
+    </item>
+    
+    <item>
       <title>OpenCV</title>
       <link>https://milaiai.com/post/opencv/</link>
       <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
@@ -71,21 +80,13 @@
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://milaiai.com/post/git/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://milaiai.com/post/git/</guid>
-      <description>Tips Update the http post buffer value git config --global http.postBuffer 1048576000 Common Questions gnutls_handshake() failed: The TLS connection was non-properly terminated Cloning into &amp;#39;Sophus&amp;#39;... fatal: unable to access &amp;#39;https://github.com/yubaoliu/Sophus.git/&amp;#39;: gnutls_handshake() failed: The TLS connection was non-properly terminated. ERROR: Service &amp;#39;orbslam3&amp;#39; failed to build: The command &amp;#39;/bin/sh -c git clone https://github.com/yubaoliu/Sophus.git &amp;amp;&amp;amp; cd Sophus &amp;amp;&amp;amp; git checkout master &amp;amp;&amp;amp; mkdir build &amp;amp;&amp;amp; cd build &amp;amp;&amp;amp; cmake .. -DCMAKE_BUILD_TYPE=Release &amp;amp;&amp;amp; make -j3 &amp;amp;&amp;amp; make install&amp;#39; returned a non-zero code: 128 Solution:</description>
-    </item>
-    
-    <item>
       <title>Network</title>
       <link>https://milaiai.com/post/network/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/network/</guid>
-      <description>DNS vim /etc/resolv.conf nameserver 8.8.8.8 nameserver 8.8.4.4 github rosdep update 超时失败2021最新解决方法 GitHub Proxy: https://ghproxy.com/ APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; }</description>
+      <description>DNS vim /etc/resolv.conf
+nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; } </description>
     </item>
     
     <item>
@@ -112,8 +113,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/ros-installation/</guid>
-      <description>rosdep update Error Message:
-Warning: running &amp;#39;rosdep update&amp;#39; as root is not recommended. You should run &amp;#39;sudo rosdep fix-permissions&amp;#39; and invoke &amp;#39;rosdep update&amp;#39; again without sudo. ERROR: error loading sources list: (&amp;#39;The read operation timed out&amp;#39;,) reading in sources list data from /etc/ros/rosdep/sources.list.d Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/base.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/python.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/ruby.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/releases/fuerte.yaml Query rosdistro index https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml Skip end-of-life distro &amp;#34;ardent&amp;#34; Skip end-of-life distro &amp;#34;bouncy&amp;#34; Skip end-of-life distro &amp;#34;crystal&amp;#34; Skip end-of-life distro &amp;#34;dashing&amp;#34; Skip end-of-life distro &amp;#34;eloquent&amp;#34; Add distro &amp;#34;foxy&amp;#34; ERROR: Service &amp;#39;rdsslam&amp;#39; failed to build: The command &amp;#39;/bin/sh -c rosdep update&amp;#39; returned a non-zero code: 1 ``` </description>
+      <description>rosdep update 超时失败2021最新解决方法 rosdep update Error Message: Warning: running &amp;#39;rosdep update&amp;#39; as root is not recommended. You should run &amp;#39;sudo rosdep fix-permissions&amp;#39; and invoke &amp;#39;rosdep update&amp;#39; again without sudo. ERROR: error loading sources list: (&amp;#39;The read operation timed out&amp;#39;,) reading in sources list data from /etc/ros/rosdep/sources.list.d Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/base.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/python.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/ruby.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/releases/fuerte.yaml Query</description>
     </item>
     
     <item>

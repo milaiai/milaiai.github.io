@@ -11,7 +11,7 @@ archives = ["2021/12"]
 
 +++
 
-
+- [rosdep update 超时失败2021最新解决方法](https://blog.csdn.net/Kenny_GuanHua/article/details/116845781)
 
 # rosdep update
 
@@ -37,4 +37,3 @@ Warning: running 'rosdep update' as root is not recommended.
           Add distro "foxy"
           ERROR: Service 'rdsslam' failed to build: The command '/bin/sh -c rosdep update' returned a non-zero code: 1
 ```
-
