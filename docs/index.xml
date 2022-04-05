@@ -6,7 +6,16 @@
     <description>Recent content on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NFS共享服务配置</title>
+      <link>https://milaiai.com/post/nfs/</link>
+      <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/nfs/</guid>
+      <description>服务器 安装 sudo apt update sudo apt install nfs-kernel-server 配置文件 /etc/exports /srv/nfs4 192.168.33.0/24(rw,sync,no_subtree_check,crossmnt,fsid=0) /srv/nfs4/backups 192.168.33.0/24(ro,sync,no_subtree_check) 192.168.33.3(rw,sync,no_subtree_check) /srv/nfs4/www 192.168.33.110(rw,sync,no_subtree_check) /mnt/nfs_share subnet(rw,sync,no_subtree_check) /var/nfs/general client_ip(rw,sync,no_subtree_check) /home client_ip(rw,sync,no_root_squash,no_subtree_check) fsid=0定义了 NFS 根目录 crossmnt选项是必要的，用来分享被导出目录的子目</description>
+    </item>
+    
     <item>
       <title>OpenCV</title>
       <link>https://milaiai.com/post/opencv/</link>

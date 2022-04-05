@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131527698-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131527698-4');
+</script>
+
+<title>MILAI AI | NFS共享服务配置</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="MILAI AI">
+    
+    <meta name="description" content="Git">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="MILAI AI | NFS共享服务配置" />
+    
+    
+        
+        <link rel="stylesheet" href="https://milaiai.com/css/styles.min.dec565c82e7132ba8a26716cb3139764f5f7b34ef0b64ef1ee5bcb2a082e7438.css" integrity="sha256-3sVlyC5xMrqKJnFssxOXZPX3s07wtk7x7lvLKggudDg=">
+    
+    <link id="dark-mode-theme" rel="stylesheet" href="/css/darker.min.css" async disabled>
+    <link href="/css/blonde.min.css" rel="stylesheet" type="text/css" media="print"
+        onload="this.media='all'">
+    
+
+
+
+<meta name="description" content="Git">
+<meta property="og:site_name" content="MILAI AI">
+<meta property="og:description" content="Git">
+<meta property="og:url" content="https://milaiai.com/post/nfs/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://milaiai.com/post/nfs/">
+
+<meta name="twitter:description" content="Git">
+<meta property="article:published_time" content="2022-04-05T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2022-04-05T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="https://milaiai.com/img/cover.jpg">
+<meta property="og:image:url" content="https://milaiai.com/img/cover.jpg">
+    
+
+    
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100"><div class="bg-gray-800">
+    <div class="container mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <a href="https://milaiai.com/"><span
+                        class="font-semibold text-2xl tracking-tight">MILAI AI</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <a id="dark-mode-toggle-1" href="javascript:void(0);" class="no-underline text-white mr-2"><span
+                            id="dark-mode-toggle-icon1"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2" aria-label="Darkmode Toggle Button"></span></a>
+                    <span class="text-gray-300">|</span>
+                </div>
+                <button id="hamburgerbtn"
+                    class="flex items-center px-3 py-1 text-gray-300 hover:text-white">
+                    <span class="icon-menu text-2xl" aria-label="Hamburger Button"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-gray-400 invisible md:visible">
+                    <span>|</span>
+                    <a id="dark-mode-toggle-2" href="javascript:void(0);" class="no-underline hover:text-white"><span
+                            id="dark-mode-toggle-icon2"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2"></span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container mx-auto mt-4 flex-grow" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+    
+    <div class="col-span-3 dark:text-white">
+    
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <h1 class="title text-4xl">NFS共享服务配置</h1>
+            <hr class="my-2">
+            <aside id="meta">
+                <div>
+                    <section>
+                        <h4 id="date"><span class="icon-access_time mr-2"></span>2022/04/05 </h4>
+                    </section>
+                    
+                    <div id="tags">
+                        <span class="icon-local_offer mr-1"></span>
+                        
+                        <a href="https://milaiai.com/tags/tools">Tools</a> |
+                        
+                    </div>
+                    
+                </div>
+            </aside>
+            <hr class="my-2">
+            
+            <img class="py-4" src="https://milaiai.com/img/cover.jpg">
+            
+            <div class="content mt-5"><h1 id="服务器">服务器</h1>
+<h2 id="安装">安装</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt update
+sudo apt install nfs-kernel-server
+</code></pre></div><h2 id="配置文件">配置文件</h2>
+<p>/etc/exports</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/srv/nfs4         192.168.33.0/24<span style="color:#f92672">(</span>rw,sync,no_subtree_check,crossmnt,fsid<span style="color:#f92672">=</span>0<span style="color:#f92672">)</span>
+/srv/nfs4/backups 192.168.33.0/24<span style="color:#f92672">(</span>ro,sync,no_subtree_check<span style="color:#f92672">)</span> 192.168.33.3<span style="color:#f92672">(</span>rw,sync,no_subtree_check<span style="color:#f92672">)</span>
+/srv/nfs4/www     192.168.33.110<span style="color:#f92672">(</span>rw,sync,no_subtree_check<span style="color:#f92672">)</span>
+/mnt/nfs_share subnet<span style="color:#f92672">(</span>rw,sync,no_subtree_check<span style="color:#f92672">)</span>
+/var/nfs/general    client_ip<span style="color:#f92672">(</span>rw,sync,no_subtree_check<span style="color:#f92672">)</span>
+/home               client_ip<span style="color:#f92672">(</span>rw,sync,no_root_squash,no_subtree_check<span style="color:#f92672">)</span>
+</code></pre></div><ul>
+<li>fsid=0定义了 NFS 根目录</li>
+<li>crossmnt选项是必要的，用来分享被导出目录的子目录</li>
+<li>ro                          该主机对该共享目录有只读权限</li>
+<li>rw                         该主机对该共享目录有读写权限, The client is granted both read and write permission to the volume.</li>
+<li>root_squash         客户机用root用户访问该共享文件夹时，将root用户映射成匿名用户</li>
+<li>no_root_squash   客户机用root访问该共享文件夹时，不映射root用户, As mentioned earlier, NFS will translate any request from the remote root user to a non-privileged user. This is an intended security feature to prevent unwanted access to the host system. However, using this option will disable this behavior.</li>
+<li>all_squash            客户机上的任何用户访问该共享目录时都映射成匿名用户</li>
+<li>anonuid                将客户机上的用户映射成指定的本地用户ID的用户</li>
+<li>anongid                将客户机上的用户映射成属于指定的本地用户组ID</li>
+<li>sync                      资料同步写入到内存与硬盘中, Forces NFS to write the changes to disk before replying. It offers a more stable and consistent experience. The reply will reflect the actual state of the remote volume. However, the file operations will be slower.</li>
+<li>async                    资料会先暂存于内存中，而非直接写入硬盘</li>
+<li>no_subtree_check: Prevents subtree checking. If not disabled, hosts will be forced to check the existence of the file in the exported tree for every single request from the client. It can lead to many problems, for example, a file is renamed while the client is using it. In most cases, disabling subtree checks is the way to go.</li>
+<li>insecure                允许从这台机器过来的非授权访问</li>
+</ul>
+<p>绑定其他挂载目录</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo mount --bind /opt/backups /srv/nfs4/backups
+sudo mount --bind /var/www /srv/nfs4/www
+</code></pre></div><p>上面的绑定，重启之后便会失效，可以修改fstab文件实现永久绑定。</p>
+<p>永久挂载：  /etc/fstab</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/opt/backups /srv/nfs4/backups  none   bind   <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>
+/var/www     /srv/nfs4/www      none   bind   <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>
+</code></pre></div><p>使配置文件生效</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo exportfs -ra
+</code></pre></div><p>查看共享文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"> sudo exportfs -v
+</code></pre></div><p>exportfs用法</p>
+<p>-a ：全部mount或者unmount /etc/exports中的内容
+-r ：重新mount /etc/exports中分享出来的目录
+-u ：umount 目录
+-v ：将详细的信息输出到屏幕上</p>
+<h1 id="防火墙">防火墙</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo ufw status
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo ufw enable
+sudo ufw disable
+sudo ufw status
+</code></pre></div><p>允许某个IP或any访问nfs端口</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo ufw allow nfs
+sudo ufw allow from 31.171.250.221 to any port nfs
+sudo ufw allow from any to any port nfs
+</code></pre></div><p>查看端口</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$rpcinfo -p
+program vers proto   port  service
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">4</span>   tcp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">3</span>   tcp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">2</span>   tcp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">4</span>   udp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">3</span>   udp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">2</span>   udp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">1</span>   udp  <span style="color:#ae81ff">39242</span>  mountd
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">1</span>   tcp  <span style="color:#ae81ff">20048</span>  mountd
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">2</span>   udp  <span style="color:#ae81ff">52780</span>  mountd
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">2</span>   tcp  <span style="color:#ae81ff">20048</span>  mountd
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">3</span>   udp  <span style="color:#ae81ff">53401</span>  mountd
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">3</span>   tcp  <span style="color:#ae81ff">20048</span>  mountd
+    <span style="color:#ae81ff">100003</span>    <span style="color:#ae81ff">3</span>   tcp   <span style="color:#ae81ff">2049</span>  nfs
+    <span style="color:#ae81ff">100003</span>    <span style="color:#ae81ff">4</span>   tcp   <span style="color:#ae81ff">2049</span>  nfs
+    <span style="color:#ae81ff">100227</span>    <span style="color:#ae81ff">3</span>   tcp   <span style="color:#ae81ff">2049</span>
+    <span style="color:#ae81ff">100003</span>    <span style="color:#ae81ff">3</span>   udp   <span style="color:#ae81ff">2049</span>  nfs
+    <span style="color:#ae81ff">100227</span>    <span style="color:#ae81ff">3</span>   udp   <span style="color:#ae81ff">2049</span>
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">1</span>   udp  <span style="color:#ae81ff">42315</span>  nlockmgr
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">3</span>   udp  <span style="color:#ae81ff">42315</span>  nlockmgr
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">4</span>   udp  <span style="color:#ae81ff">42315</span>  nlockmgr
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">1</span>   tcp  <span style="color:#ae81ff">42315</span>  nlockmgr
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">3</span>   tcp  <span style="color:#ae81ff">42315</span>  nlockmgr
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">4</span>   tcp  <span style="color:#ae81ff">42315</span>  nlockmgr
+</code></pre></div><p>确认nfs相关服务组件及端口占用如下:</p>
+<table>
+<thead>
+<tr>
+<th>服务名称</th>
+<th>端口名称</th>
+<th>协议名称</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nfs</td>
+<td>2049</td>
+<td>tcp/udp</td>
+<td>端口固定</td>
+</tr>
+<tr>
+<td>portmapper</td>
+<td>111</td>
+<td>tcp/udp</td>
+<td>端口固定</td>
+</tr>
+<tr>
+<td>mountd</td>
+<td>20048</td>
+<td>tcp/udp</td>
+<td>端口不固定，需人为修改固定</td>
+</tr>
+<tr>
+<td>nlockmgr</td>
+<td>42315</td>
+<td>tcp/udp</td>
+<td>端口不固定，需人为修改固定</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>更改mountd 服务端口为20048</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;mountd 20048/tcp&#34;</span> &gt;&gt; /etc/services
+echo <span style="color:#e6db74">&#34;mountd 20048/udp&#34;</span> &gt;&gt; /etc/services
+</code></pre></div><ul>
+<li>更改nlockmgr 服务端口为42315</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;fs.nfs.nlm_udpport=42315&#34;</span> &gt;&gt; /etc/sysctl.conf
+echo <span style="color:#e6db74">&#34;fs.nfs.nlm_tcpport=42315&#34;</span> &gt;&gt; /etc/sysctl.conf
+sysctl -p
+</code></pre></div><ul>
+<li>nfs服务端防火墙开放相关服务固定端口
+服务端防火墙开放2049 、111 、20048 、42315 端口，此时客户端可正常访问挂载</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ufw allow 2049/tcp
+ufw allow 2049/udp
+ufw allow 111/tcp
+ufw allow 111/udp
+ufw allow 20048/tcp
+ufw allow 20048/udp
+ufw allow 42315/tcp
+ufw allow 42315/udp
+</code></pre></div><h1 id="客户端">客户端</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt install nfs-common
+</code></pre></div><h2 id="挂载">挂载</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo mount host_ip:/var/nfs/general /nfs/general
+$ sudo mount host_ip:/home /nfs/home
+</code></pre></div><h2 id="卸载">卸载</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo umount /nfs/general
+</code></pre></div><h1 id="常用命令与技巧">常用命令与技巧</h1>
+<h2 id="versions">versions</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$sudo cat /proc/fs/nfsd/versions
+-2 +3 +4 +4.1 +4.2
+</code></pre></div><h2 id="文件访问权限">文件访问权限</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo chown -R nobody:nogroup /mnt/nfs_share/
+</code></pre></div><h2 id="重启服务">重启服务</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo systemctl restart nfs-kernel-server
+</code></pre></div><h2 id="查看挂载情况">查看挂载情况</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$df -h
+$showmount -e IP
+</code></pre></div><h2 id="查看大小">查看大小</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">du -sh /nfs/general
+</code></pre></div><h2 id="客户端nfs挂载协议与服务端不一致-可以用nfsvers来指定nfs的版本">客户端nfs挂载协议与服务端不一致, 可以用nfsvers来指定NFS的版本</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mount -t nfs -o nfsvers<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span> x.x.x.x:/share /mnt
+</code></pre></div><h2 id="nfs无法提供锁服务">nfs无法提供锁服务</h2>
+<ul>
+<li>使用远程锁：启动服务端rpc.statd服务，使用这个服务提供远程锁</li>
+<li>使用本地锁：客户端挂载指定-o nolock，查看此时客户端挂载参数使用本地锁（local_lock=all）</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mount -t nfs -o nolock x.x.x.x:/share /mnt
+</code></pre></div><h1 id="references">References</h1>
+<ul>
+<li><a href="https://medium.com/geekculture/installing-nfs-on-ubuntu-20-04-server-3993bf9ac1b6">Installing NFS on Ubuntu 20.04 server</a></li>
+<li><a href="https://www.howtoforge.com/how-to-install-nfs-client-and-server-on-ubuntu-2004/">How to Install NFS Client and Server on Ubuntu 20.04</a></li>
+<li><a href="https://cloud.tencent.com/developer/article/1626660">如何在 Ubuntu 18.04 上安装和配置 NFS 服务器</a></li>
+<li><a href="https://blog.csdn.net/lincy100/article/details/6417743">linux服务器 NFS + 防火墙配置</a></li>
+<li><a href="https://www.cnblogs.com/luxf0/p/15544783.html">nfs常见问题处理</a></li>
+</ul>
+</div>
+            <aside id="meta">
+                
+            </aside>
+            </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <div class="grid grid-cols-2">
+                <div class="col-span-1">
+                    
+                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/opencv/">
+                        <div
+                            class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                            <span class="icon-keyboard_arrow_left"></span> OpenCV
+                        </div>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <div class="mb-3">
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+    
+    <div class="container mr-auto ml-auto">
+        <p>&copy; 2022 <a href="https://milaiai.com/" class="hover:text-gray-500">MILAI AI</a></p>
+        <p>Powered by <a href="https://gohugo.io/" class="hover:text-gray-500">Hugo</a>, Theme <a
+                href="https://github.com/opera7133/Blonde" class="hover:text-gray-500">Blonde</a>.</p>
+    </div>
+    <script src="/js/switch.js"></script>
+
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js' type='text/javascript'>    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"],
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$','$'] ],
+                   displayMath: [ ['$$','$$']  ],
+                   processEscapes: true
+                  },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });</script>
+</footer>
+</div>
+</body>
+
+</html>
