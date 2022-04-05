@@ -16,7 +16,7 @@ hasCJKLanguage = true
 googleAnalytics = "UA-131527698-4"
 
 # Disqus Comment System
-#disqusShortname = ""
+disqusShortname = "milaiai"
 
 publishDir = "docs"
 
