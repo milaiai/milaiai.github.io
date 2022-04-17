@@ -4,7 +4,7 @@ title = "VINS FUSION"
 date = "2022-04-16"
 description = "VINS Fusion"
 draft = "false"
-image = "img/Vins-fusion.jpg"
+image = "img/vins-fusion.jpg"
 tags = [
     "VIO",
 ]
