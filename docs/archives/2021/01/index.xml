@@ -7,12 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://milaiai.com/archives/2021/01/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eigen</title>
+      <link>https://milaiai.com/post/eigen/</link>
+      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/eigen/</guid>
+      <description>1 In file included from /root/Pangolin/components/pango_opengl/include/pangolin/gl/gldraw.h:31:0, from /root/Pangolin/components/pango_opengl/src/gldraw.cpp:29: /root/Pangolin/components/pango_opengl/include/pangolin/gl/glformattraits.h:33:24: fatal error: Eigen/Core: No such file or directory compilation terminated. CMakeFiles/pango_opengl.dir/build.make:98: recipe for target &amp;#39;CMakeFiles/pango_opengl.dir/components/pango_opengl/src/gldraw.cpp.o&amp;#39; failed make[2]: *** [CMakeFiles/pango_opengl.dir/components/pango_opengl/src/gldraw.cpp.o] Error 1 CMakeFiles/Makefile2:830: recipe for target &amp;#39;CMakeFiles/pango_opengl.dir/all&amp;#39; failed make[1]: *** [CMakeFiles/pango_opengl.dir/all] Error 2 Makefile:148: recipe for target &amp;#39;all&amp;#39; failed 出现这个问题首先要考虑是否安装了eigen库,</description>
+    </item>
+    
+    <item>
       <title>Docker Proxy Setting</title>
-      <link>https://milaiai.com/post/docker-proxy/</link>
+      <link>https://milaiai.com/post/docker/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://milaiai.com/post/docker-proxy/</guid>
-      <description>Sometimes we need to download the developping packages from the external Network when do the research. However, I found I cannot let docker access the proxy depoloyed on my host machine especially in the build stage, such as &amp;ldquo;docker-compose build&amp;rdquo;. Usually the proxy on the host can be used when the container is up (docker-compose up). Successful Configuration for &amp;ldquo;docker-compose build&amp;rdquo; Check the IP address on your host. Use the</description>
+      <guid>https://milaiai.com/post/docker/</guid>
+      <description>daemon You may meet such error: ERROR: Service &amp;#39;web&amp;#39; failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout sudo vim /etc/docker/daemon.json { “registry-mirrors”:[“https://docker.mirrors.ustc</description>
     </item>
     
   </channel>

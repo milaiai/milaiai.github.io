@@ -11,16 +11,42 @@ archives = ["2021/01"]
 
 +++
 
-Sometimes we need to download the developping packages from the external Network when do the research. 
+# daemon
+
+You may meet such error:
+```sh
+ERROR: Service 'web' failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout
+```
+
+sudo vim /etc/docker/daemon.json
+
+```sh
+{
+  “registry-mirrors”:[“https://docker.mirrors.ustc.edu.cn”]
+}
+```
+
+# commands
+
+- systemctl daemon-reload
+- systemctl restart docker
+- remove all images and containers
+```sh
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
+```
+
+# Docker Proxy
+
+Sometimes we need to download the developing packages from the external Network when do the research.
 However, I found I cannot let docker access the proxy depoloyed on my host machine especially in the build stage, such as "docker-compose build".
 
 Usually the proxy on the host can be used when the container is up (docker-compose up).
 
-# Successful Configuration for "docker-compose build"
-- Check the IP address on your host. Use the IP like "192.168.1.7", rather than "127.0.0.1". Because "127.*" is inside the docker container. A temperary docker container is used when you build the docker image. 
+## Successful Configuration for "docker-compose build"
+- Check the IP address on your host. Use the IP like "192.168.1.7", rather than "127.0.0.1". Because "127.*" is inside the docker container. A temperary docker container is used when you build the docker image.
 - Let the proxy server listen the IP and port, "192.168.1.7"  that you set in the previous step. By default, the proxy server only can listen "127.0.0.1". **Note: this is the reason why I failed in the past.**
 
-# Example
 ## docker-compose example
 ```sh
 version: '2.3'
@@ -63,21 +89,20 @@ FROM golang:1.12
 RUN curl www.google.com --max-time 3
 ```
 
-# How to test proxy
+## How to test proxy
 
 ```sh
 curl www.google.com --max-time 3
 ```
 
-# How to restart docker
+## How to restart docker
 
 ```sh
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
-
-# Global config
+## Global config
 
 This is a global config. Not suggested to use.
 
@@ -95,9 +120,9 @@ vim ~/.docker/config.json
    }
  }
 }
-``` 
+```
 
-# Set Proxy inside the  Dockerfile 
+## Set Proxy inside the  Dockerfile
 
 Not suggested to use.
 
@@ -112,15 +137,15 @@ ENV https_proxy "http://192.168.1.7:1087"
 RUN curl www.google.com --max-time 3
 ```
 
-# Use build-arg
+## Use build-arg
 
 ```sh
 docker build -t anguiao/nginx-brotli . --build-arg http_proxy=http://172.21.0.9:8118 --build-arg https_proxy=http://172.21.0.9:8118
-``` 
+```
 
 注意：在写代理地址时，不可写成 127.0.0.1 或者 localhost，应使用宿主机的 IP。我这里使用的是宿主机的内网 IP，可根据网络环境进行适当的改动。
 
-#  docker.service.d
+##  docker.service.d
 
 mkdir /etc/systemd/system/docker.service.d
 
@@ -141,4 +166,3 @@ mkdir /etc/systemd/system/docker.service.d
 
 - [使用代理构建 Docker 镜像](https://blog.anguiao.com/archives/use-proxy-when-building-docker-image.html)
 - [docker build时怎么用http proxy代理?](https://segmentfault.com/q/1010000004613949)
-

@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://milaiai.com/archives/2021/12/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>OpenCV</title>
+      <title>OpenCV Usage</title>
       <link>https://milaiai.com/post/opencv/</link>
       <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/opencv/</guid>
-      <description>Possible Errors fatal error: dynlink_nvcuvid.h: No such file or directory In file included from /home/yubao/Software/opencv/build/modules/cudacodec/opencv_cudacodec_pch_dephelp.cxx:1: /home/yubao/Software/opencv/modules/cudacodec/src/precomp.hpp:60:18: fatal error: dynlink_nvcuvid.h: No such file or directory 60 | #include &amp;lt;dynlink_nvcuvid.h&amp;gt; | ^~~~~~~~~~~~~~~~~~~ compilation terminated. cat modules/cudacodec/src/precomp.hpp #if CUDA_VERSION &amp;gt;= 9000 #include &amp;lt;dynlink_nvcuvid.h&amp;gt;#else #include &amp;lt;nvcuvid.h&amp;gt;#endif cuda10 does not provide dynlink_nvcuvid.h any more OpenCV CUDA 10 安装 dynlink_nvcuvid.h 问题解决方法 error: ‘CODEC_F</description>
+      <description>CMake Usage cmake_minimum_required(VERSION 2.8) project( DisplayImage ) find_package( OpenCV REQUIRED ) include_directories( ${OpenCV_INCLUDE_DIRS} ) add_executable( DisplayImage DisplayImage.cpp ) target_link_libraries( DisplayImage ${OpenCV_LIBS} ) Basic variables: OpenCV_LIBS : The list of all imported targets for OpenCV modules. OpenCV_INCLUDE_DIRS : The OpenCV include directories. OpenCV_COMPUTE_CAPABILITIES : The version of compute capability. OpenCV_ANDROID_NATIVE_API_LEVEL : Minimum required level of Android API. OpenCV_VERSION : The version of this OpenCV build: &amp;ldquo;3.3.1&amp;rdquo; OpenCV_VERSION_MAJOR : Major version part</description>
     </item>
     
     <item>

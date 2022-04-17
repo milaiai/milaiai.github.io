@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eigen on MILAI AI</title>
+    <link>https://milaiai.com/tags/eigen/</link>
+    <description>Recent content in Eigen on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 10 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/eigen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eigen</title>
+      <link>https://milaiai.com/post/eigen/</link>
+      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/eigen/</guid>
+      <description>1 In file included from /root/Pangolin/components/pango_opengl/include/pangolin/gl/gldraw.h:31:0, from /root/Pangolin/components/pango_opengl/src/gldraw.cpp:29: /root/Pangolin/components/pango_opengl/include/pangolin/gl/glformattraits.h:33:24: fatal error: Eigen/Core: No such file or directory compilation terminated. CMakeFiles/pango_opengl.dir/build.make:98: recipe for target &amp;#39;CMakeFiles/pango_opengl.dir/components/pango_opengl/src/gldraw.cpp.o&amp;#39; failed make[2]: *** [CMakeFiles/pango_opengl.dir/components/pango_opengl/src/gldraw.cpp.o] Error 1 CMakeFiles/Makefile2:830: recipe for target &amp;#39;CMakeFiles/pango_opengl.dir/all&amp;#39; failed make[1]: *** [CMakeFiles/pango_opengl.dir/all] Error 2 Makefile:148: recipe for target &amp;#39;all&amp;#39; failed 出现这个问题首先要考虑是否安装了eigen库,</description>
+    </item>
+    
+  </channel>
+</rss>

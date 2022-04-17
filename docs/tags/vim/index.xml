@@ -13,7 +13,16 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/tags/</guid>
-      <description>Shortcuts Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳转。 Ctrl+t or Ctrl + o: 跳转到前一次的tag处 Ctrl+w+]: 分割当前窗口，并且跳转到光标下的tag Ctags 查看ct</description>
+      <description>Command Function Ctrl + ] Go to definition Ctrl + T Jump back from the definition Ctrl + W Ctrl + ] Open the definition in a horizontal split :ts &amp;lt;tag_name&amp;gt; List the tags that match &amp;lt;tag_name&amp;gt; :tn Jump to the next matching tag :tp Jump to the previous matching tag Shortcuts Ctrl+] : 取出当前光标下的word作为ta</description>
+    </item>
+    
+    <item>
+      <title>VIM</title>
+      <link>https://milaiai.com/post/vim/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/vim/</guid>
+      <description></description>
     </item>
     
   </channel>

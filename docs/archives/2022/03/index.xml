@@ -7,12 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://milaiai.com/archives/2022/03/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Debug</title>
+      <link>https://milaiai.com/post/debug/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/debug/</guid>
+      <description>Rosrun set(CMAKE_BUILD_TYPE Debug) rosrun --prefix &amp;#39;gdb -ex run --args&amp;#39; [package_name] [node_name] </description>
+    </item>
+    
+    <item>
       <title>Github使用技巧</title>
       <link>https://milaiai.com/post/git/</link>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/git/</guid>
       <description>使用Github的方法 利用镜像下载 通过代理网站下载 Gitee中转fork仓库下载 修改 HOSTS 文件进行加速 科学上网 (略) 加速网站 https://gitclone.com/ ghproxy GitHub 文件加速 https://gh.api.99988866.xyz http://toolwa.com/github/ https://github.zhlh6.cn</description>
+    </item>
+    
+    <item>
+      <title>Linux使用技巧</title>
+      <link>https://milaiai.com/post/linux/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/linux/</guid>
+      <description>查看各文件大小 du -h --max-depth=1 查看剩余空间 ~ df . -h Filesystem Size Used Avail Use% Mounted on /dev/nvme1n1p6 492G 457G 9.6G 98% /</description>
     </item>
     
   </channel>

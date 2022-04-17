@@ -6,7 +6,16 @@
     <description>Recent content in Posts on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VINS FUSION</title>
+      <link>https://milaiai.com/post/vins_fusion/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/vins_fusion/</guid>
+      <description>Build Get project git clone https://github.com/yubaoliu/VINS-Fusion -b dev Ubuntu 16 ROS OpenCV 3.x set(OpenCV_DIR &amp;#34;/home/yubao/Software/install/opencv_3.3.1/share/OpenCV&amp;#34;) or export OpenCV_DIR=&amp;#34;/home/yubao/Software/install/opencv_3.3.1/share/OpenCV&amp;#34; compile cd ROS_PROJECT_DIR catkin_make Problems 编译错误 修改这些变量，之前使用的是C语言版本的API，并没有包含相应的头文件，所以报措。理论上</description>
+    </item>
+    
     <item>
       <title>NFS共享服务配置</title>
       <link>https://milaiai.com/post/nfs/</link>
@@ -14,6 +23,15 @@
       
       <guid>https://milaiai.com/post/nfs/</guid>
       <description>服务器 安装 sudo apt update sudo apt install nfs-kernel-server 配置文件 /etc/exports /srv/nfs4 192.168.33.0/24(rw,sync,no_subtree_check,crossmnt,fsid=0) /srv/nfs4/backups 192.168.33.0/24(ro,sync,no_subtree_check) 192.168.33.3(rw,sync,no_subtree_check) /srv/nfs4/www 192.168.33.110(rw,sync,no_subtree_check) /mnt/nfs_share subnet(rw,sync,no_subtree_check) /var/nfs/general client_ip(rw,sync,no_subtree_check) /home client_ip(rw,sync,no_root_squash,no_subtree_check) fsid=0定义了 NFS 根目录 crossmnt选项是必要的，用来分享被导出目录的子目</description>
+    </item>
+    
+    <item>
+      <title>Debug</title>
+      <link>https://milaiai.com/post/debug/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/debug/</guid>
+      <description>Rosrun set(CMAKE_BUILD_TYPE Debug) rosrun --prefix &amp;#39;gdb -ex run --args&amp;#39; [package_name] [node_name] </description>
     </item>
     
     <item>
@@ -26,21 +44,39 @@
     </item>
     
     <item>
-      <title>OpenCV</title>
+      <title>Linux使用技巧</title>
+      <link>https://milaiai.com/post/linux/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/linux/</guid>
+      <description>查看各文件大小 du -h --max-depth=1 查看剩余空间 ~ df . -h Filesystem Size Used Avail Use% Mounted on /dev/nvme1n1p6 492G 457G 9.6G 98% /</description>
+    </item>
+    
+    <item>
+      <title>Eigen</title>
+      <link>https://milaiai.com/post/eigen/</link>
+      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/eigen/</guid>
+      <description>1 In file included from /root/Pangolin/components/pango_opengl/include/pangolin/gl/gldraw.h:31:0, from /root/Pangolin/components/pango_opengl/src/gldraw.cpp:29: /root/Pangolin/components/pango_opengl/include/pangolin/gl/glformattraits.h:33:24: fatal error: Eigen/Core: No such file or directory compilation terminated. CMakeFiles/pango_opengl.dir/build.make:98: recipe for target &amp;#39;CMakeFiles/pango_opengl.dir/components/pango_opengl/src/gldraw.cpp.o&amp;#39; failed make[2]: *** [CMakeFiles/pango_opengl.dir/components/pango_opengl/src/gldraw.cpp.o] Error 1 CMakeFiles/Makefile2:830: recipe for target &amp;#39;CMakeFiles/pango_opengl.dir/all&amp;#39; failed make[1]: *** [CMakeFiles/pango_opengl.dir/all] Error 2 Makefile:148: recipe for target &amp;#39;all&amp;#39; failed 出现这个问题首先要考虑是否安装了eigen库,</description>
+    </item>
+    
+    <item>
+      <title>OpenCV Usage</title>
       <link>https://milaiai.com/post/opencv/</link>
       <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/opencv/</guid>
-      <description>Possible Errors fatal error: dynlink_nvcuvid.h: No such file or directory In file included from /home/yubao/Software/opencv/build/modules/cudacodec/opencv_cudacodec_pch_dephelp.cxx:1: /home/yubao/Software/opencv/modules/cudacodec/src/precomp.hpp:60:18: fatal error: dynlink_nvcuvid.h: No such file or directory 60 | #include &amp;lt;dynlink_nvcuvid.h&amp;gt; | ^~~~~~~~~~~~~~~~~~~ compilation terminated. cat modules/cudacodec/src/precomp.hpp #if CUDA_VERSION &amp;gt;= 9000 #include &amp;lt;dynlink_nvcuvid.h&amp;gt;#else #include &amp;lt;nvcuvid.h&amp;gt;#endif cuda10 does not provide dynlink_nvcuvid.h any more OpenCV CUDA 10 安装 dynlink_nvcuvid.h 问题解决方法 error: ‘CODEC_F</description>
+      <description>CMake Usage cmake_minimum_required(VERSION 2.8) project( DisplayImage ) find_package( OpenCV REQUIRED ) include_directories( ${OpenCV_INCLUDE_DIRS} ) add_executable( DisplayImage DisplayImage.cpp ) target_link_libraries( DisplayImage ${OpenCV_LIBS} ) Basic variables: OpenCV_LIBS : The list of all imported targets for OpenCV modules. OpenCV_INCLUDE_DIRS : The OpenCV include directories. OpenCV_COMPUTE_CAPABILITIES : The version of compute capability. OpenCV_ANDROID_NATIVE_API_LEVEL : Minimum required level of Android API. OpenCV_VERSION : The version of this OpenCV build: &amp;ldquo;3.3.1&amp;rdquo; OpenCV_VERSION_MAJOR : Major version part</description>
     </item>
     
     <item>
       <title>Docker Proxy Setting</title>
-      <link>https://milaiai.com/post/docker-proxy/</link>
+      <link>https://milaiai.com/post/docker/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://milaiai.com/post/docker-proxy/</guid>
-      <description>Sometimes we need to download the developping packages from the external Network when do the research. However, I found I cannot let docker access the proxy depoloyed on my host machine especially in the build stage, such as &amp;ldquo;docker-compose build&amp;rdquo;. Usually the proxy on the host can be used when the container is up (docker-compose up). Successful Configuration for &amp;ldquo;docker-compose build&amp;rdquo; Check the IP address on your host. Use the</description>
+      <guid>https://milaiai.com/post/docker/</guid>
+      <description>daemon You may meet such error: ERROR: Service &amp;#39;web&amp;#39; failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout sudo vim /etc/docker/daemon.json { “registry-mirrors”:[“https://docker.mirrors.ustc</description>
     </item>
     
     <item>
@@ -76,7 +112,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/tags/</guid>
-      <description>Shortcuts Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳转。 Ctrl+t or Ctrl + o: 跳转到前一次的tag处 Ctrl+w+]: 分割当前窗口，并且跳转到光标下的tag Ctags 查看ct</description>
+      <description>Command Function Ctrl + ] Go to definition Ctrl + T Jump back from the definition Ctrl + W Ctrl + ] Open the definition in a horizontal split :ts &amp;lt;tag_name&amp;gt; List the tags that match &amp;lt;tag_name&amp;gt; :tn Jump to the next matching tag :tp Jump to the previous matching tag Shortcuts Ctrl+] : 取出当前光标下的word作为ta</description>
     </item>
     
     <item>
@@ -85,7 +121,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/network/</guid>
-      <description>DNS vim /etc/resolv.conf nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; } Sftp 安装 ssh 服务端 sudo apt-get install openssh-server 显示 sshd 即可以成功连接 ps -e |grep ssh 如果不显示 sshd sudo /etc/init.d/ssh start SSH能连接上，但SFTP</description>
+      <description>DNS vim /etc/resolv.conf nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; } Sftp 安装 ssh 服务端 sudo apt-get install openssh-server 显示 sshd 即可以成功连接 ps -e |grep ssh 如果不显示 sshd sudo /etc/init.d/ssh start</description>
     </item>
     
     <item>
@@ -113,6 +149,15 @@
       
       <guid>https://milaiai.com/post/ros-installation/</guid>
       <description>rosdep update 超时失败2021最新解决方法 rosdep update Error Message: Warning: running &amp;#39;rosdep update&amp;#39; as root is not recommended. You should run &amp;#39;sudo rosdep fix-permissions&amp;#39; and invoke &amp;#39;rosdep update&amp;#39; again without sudo. ERROR: error loading sources list: (&amp;#39;The read operation timed out&amp;#39;,) reading in sources list data from /etc/ros/rosdep/sources.list.d Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/base.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/python.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/ruby.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/releases/fuerte.yaml Query</description>
+    </item>
+    
+    <item>
+      <title>VIM</title>
+      <link>https://milaiai.com/post/vim/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/vim/</guid>
+      <description></description>
     </item>
     
     <item>

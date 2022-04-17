@@ -3,22 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://milaiai.com/</loc>
-    <lastmod>2022-04-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://milaiai.com/post/nfs/</loc>
-    <lastmod>2022-04-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/post/</loc>
-    <lastmod>2022-04-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/tags/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/post/vins_fusion/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/tags/vio/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/post/nfs/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/tags/tools/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://milaiai.com/tags/debug/</loc>
+    <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/post/debug/</loc>
+    <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://milaiai.com/post/git/</loc>
     <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/tags/linux/</loc>
+    <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/post/linux/</loc>
+    <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/tags/eigen/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/post/eigen/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/tags/opencv/</loc>
     <lastmod>2021-12-14T00:00:00+00:00</lastmod>
@@ -29,7 +53,7 @@
     <loc>https://milaiai.com/tags/docer/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://milaiai.com/post/docker-proxy/</loc>
+    <loc>https://milaiai.com/post/docker/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/tags/nvidia/</loc>
@@ -93,6 +117,9 @@
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/tags/vim/</loc>
+    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://milaiai.com/post/vim/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://milaiai.com/post/reinforcement-learning/</loc>

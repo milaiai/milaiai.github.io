@@ -30,7 +30,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/tags/</guid>
-      <description>Shortcuts Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳转。 Ctrl+t or Ctrl + o: 跳转到前一次的tag处 Ctrl+w+]: 分割当前窗口，并且跳转到光标下的tag Ctags 查看ct</description>
+      <description>Command Function Ctrl + ] Go to definition Ctrl + T Jump back from the definition Ctrl + W Ctrl + ] Open the definition in a horizontal split :ts &amp;lt;tag_name&amp;gt; List the tags that match &amp;lt;tag_name&amp;gt; :tn Jump to the next matching tag :tp Jump to the previous matching tag Shortcuts Ctrl+] : 取出当前光标下的word作为ta</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/network/</guid>
-      <description>DNS vim /etc/resolv.conf nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; } Sftp 安装 ssh 服务端 sudo apt-get install openssh-server 显示 sshd 即可以成功连接 ps -e |grep ssh 如果不显示 sshd sudo /etc/init.d/ssh start SSH能连接上，但SFTP</description>
+      <description>DNS vim /etc/resolv.conf nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; } Sftp 安装 ssh 服务端 sudo apt-get install openssh-server 显示 sshd 即可以成功连接 ps -e |grep ssh 如果不显示 sshd sudo /etc/init.d/ssh start</description>
     </item>
     
     <item>
@@ -49,6 +49,15 @@
       
       <guid>https://milaiai.com/post/python/</guid>
       <description>Pip source list https://www.cnblogs.com/chenjo/p/14071864.html ~/.pip/pip.conf [global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple [install] trusted-host=mirrors.aliyun.com Set source list for pip install pip install pymysql -i https://pypi.tuna.tsinghua.edu.cn/simple/ // 国内源 pip install 包名-i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com References pip安装包报错Could not find a version that satisfies the requirement pymysql (from versions: none)</description>
+    </item>
+    
+    <item>
+      <title>VIM</title>
+      <link>https://milaiai.com/post/vim/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/vim/</guid>
+      <description></description>
     </item>
     
     <item>

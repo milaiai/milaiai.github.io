@@ -158,6 +158,13 @@
             <img class="py-4" src="https://milaiai.com/img/cover.jpg">
             
             <div class="content mt-5"><p><img src="https://image.vimjc.com/images/691e0c29gy1fnnj08ml3qg20k807x3zq.gif" alt=""></p>
+<p>Command	Function
+Ctrl + ]	Go to definition
+Ctrl + T	Jump back from the definition
+Ctrl + W Ctrl + ]	Open the definition in a horizontal split
+:ts &lt;tag_name&gt;	List the tags that match &lt;tag_name&gt;
+:tn	Jump to the next matching tag
+:tp	Jump to the previous matching tag</p>
 <h1 id="shortcuts">Shortcuts</h1>
 <ul>
 <li>Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳转。</li>
@@ -187,7 +194,7 @@ ctags --list-kinds<span style="color:#f92672">=</span>c++
 </code></pre></div><ul>
 <li>只对特定文件生成tags</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ctags <span style="color:#e6db74">`</span>find -name <span style="color:#e6db74">&#34;*.h&#34;</span><span style="color:#e6db74">`</span> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ctags <span style="color:#e6db74">`</span>find -name <span style="color:#e6db74">&#34;*.h&#34;</span><span style="color:#e6db74">`</span>
 </code></pre></div><ul>
 <li>用于跳转到指定的tag。例如：</li>
 </ul>

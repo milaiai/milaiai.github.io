@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131527698-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131527698-4');
+</script>
+
+<title>MILAI AI | Eigen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="MILAI AI">
+    
+    <meta name="description" content="Eigen">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="MILAI AI | Eigen" />
+    
+    
+        
+        <link rel="stylesheet" href="https://milaiai.com/css/styles.min.dec565c82e7132ba8a26716cb3139764f5f7b34ef0b64ef1ee5bcb2a082e7438.css" integrity="sha256-3sVlyC5xMrqKJnFssxOXZPX3s07wtk7x7lvLKggudDg=">
+    
+    <link id="dark-mode-theme" rel="stylesheet" href="/css/darker.min.css" async disabled>
+    <link href="/css/blonde.min.css" rel="stylesheet" type="text/css" media="print"
+        onload="this.media='all'">
+    
+
+
+
+<meta name="description" content="Eigen">
+<meta property="og:site_name" content="MILAI AI">
+<meta property="og:description" content="Eigen">
+<meta property="og:url" content="https://milaiai.com/post/eigen/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://milaiai.com/post/eigen/">
+
+<meta name="twitter:description" content="Eigen">
+<meta property="article:published_time" content="2022-01-10T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2022-01-10T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="https://milaiai.com/img/robot-world-coordinate.png">
+<meta property="og:image:url" content="https://milaiai.com/img/robot-world-coordinate.png">
+    
+
+    
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100"><div class="bg-gray-800">
+    <div class="container mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <a href="https://milaiai.com/"><span
+                        class="font-semibold text-2xl tracking-tight">MILAI AI</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <a id="dark-mode-toggle-1" href="javascript:void(0);" class="no-underline text-white mr-2"><span
+                            id="dark-mode-toggle-icon1"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2" aria-label="Darkmode Toggle Button"></span></a>
+                    <span class="text-gray-300">|</span>
+                </div>
+                <button id="hamburgerbtn"
+                    class="flex items-center px-3 py-1 text-gray-300 hover:text-white">
+                    <span class="icon-menu text-2xl" aria-label="Hamburger Button"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-400 hover:text-white mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-gray-400 invisible md:visible">
+                    <span>|</span>
+                    <a id="dark-mode-toggle-2" href="javascript:void(0);" class="no-underline hover:text-white"><span
+                            id="dark-mode-toggle-icon2"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg mr-2"></span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container mx-auto mt-4 flex-grow" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+    
+    <div class="col-span-3 dark:text-white">
+    
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <h1 class="title text-4xl">Eigen</h1>
+            <hr class="my-2">
+            <aside id="meta">
+                <div>
+                    <section>
+                        <h4 id="date"><span class="icon-access_time mr-2"></span>2022/01/10 </h4>
+                    </section>
+                    
+                    <div id="tags">
+                        <span class="icon-local_offer mr-1"></span>
+                        
+                        <a href="https://milaiai.com/tags/eigen">Eigen</a> |
+                        
+                    </div>
+                    
+                </div>
+            </aside>
+            <hr class="my-2">
+            
+            <img class="py-4" src="https://milaiai.com/img/robot-world-coordinate.png">
+            
+            <div class="content mt-5"><h2 id="1">1</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">In file included from /root/Pangolin/components/pango_opengl/include/pangolin/gl/gldraw.h:31:0,
+                 from /root/Pangolin/components/pango_opengl/src/gldraw.cpp:29:
+/root/Pangolin/components/pango_opengl/include/pangolin/gl/glformattraits.h:33:24: fatal error: Eigen/Core: No such file or directory
+compilation terminated.
+CMakeFiles/pango_opengl.dir/build.make:98: recipe <span style="color:#66d9ef">for</span> target <span style="color:#e6db74">&#39;CMakeFiles/pango_opengl.dir/components/pango_opengl/src/gldraw.cpp.o&#39;</span> failed
+make<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span>: *** <span style="color:#f92672">[</span>CMakeFiles/pango_opengl.dir/components/pango_opengl/src/gldraw.cpp.o<span style="color:#f92672">]</span> Error <span style="color:#ae81ff">1</span>
+CMakeFiles/Makefile2:830: recipe <span style="color:#66d9ef">for</span> target <span style="color:#e6db74">&#39;CMakeFiles/pango_opengl.dir/all&#39;</span> failed
+make<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>: *** <span style="color:#f92672">[</span>CMakeFiles/pango_opengl.dir/all<span style="color:#f92672">]</span> Error <span style="color:#ae81ff">2</span>
+Makefile:148: recipe <span style="color:#66d9ef">for</span> target <span style="color:#e6db74">&#39;all&#39;</span> failed
+</code></pre></div><p>出现这个问题首先要考虑是否安装了eigen库,可以进行以下命令检查：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo updatedb
+locate eigen3
+</code></pre></div><p>如果没装，安装：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt-get install libeigen3-dev
+</code></pre></div><p>CMake:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">set<span style="color:#f92672">(</span>Eigen3_DIR CMAKE_INSTALL_PREFIX/share/eigen3/cmake<span style="color:#f92672">)</span>
+find_package<span style="color:#f92672">(</span>Eigen3 3.3 REQUIRED<span style="color:#f92672">)</span>
+
+add_executable<span style="color:#f92672">(</span>optimization_benchmark optimization_benchmark.cpp<span style="color:#f92672">)</span>
+target_link_libraries<span style="color:#f92672">(</span>optimization_benchmark Eigen3::Eigen<span style="color:#f92672">)</span>
+</code></pre></div><h2 id="2">2</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/root/Pangolin/components/pango_vars/include/pangolin/var/varstate.h:33:15: fatal error: any: No such file or directory
+compilation terminated.
+CMakeFiles/pango_vars.dir/build.make:94: recipe <span style="color:#66d9ef">for</span> target <span style="color:#e6db74">&#39;CMakeFiles/pango_vars.dir/components/pango_vars/src/varstate.cpp.o&#39;</span> failed
+make<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span>: *** <span style="color:#f92672">[</span>CMakeFiles/pango_vars.dir/components/pango_vars/src/varstate.cpp.o<span style="color:#f92672">]</span> Error <span style="color:#ae81ff">1</span>
+make<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span>: *** Waiting <span style="color:#66d9ef">for</span> unfinished jobs....
+In file included from /root/Pangolin/components/pango_vars/include/pangolin/var/var.h:37:0,
+                 from /root/Pangolin/components/pango_vars/include/pangolin/var/varextra.h:31,
+                 from /root/Pangolin/components/pango_vars/src/vars.cpp:28:
+/root/Pangolin/components/pango_vars/include/pangolin/var/varstate.h:33:15: fatal error: any: No such file or directory
+
+CMake Error at CMakeLists.txt:88 <span style="color:#f92672">(</span>add_library<span style="color:#f92672">)</span>:
+  Target <span style="color:#e6db74">&#34;pango_windowing&#34;</span> links to target <span style="color:#e6db74">&#34;Eigen3::Eigen&#34;</span> but the target was
+  not found.  Perhaps a find_package<span style="color:#f92672">()</span> call is missing <span style="color:#66d9ef">for</span> an IMPORTED
+  target, or an ALIAS target is missing?
+</code></pre></div><p>Solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd Pangolin
+./scripts/install_prerequisites.sh recommended
+git checkout v0.6
+</code></pre></div></div>
+            <aside id="meta">
+                
+            </aside>
+            </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <div class="grid grid-cols-2">
+                <div class="col-span-1">
+                    
+                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/opencv/">
+                        <div
+                            class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                            <span class="icon-keyboard_arrow_left"></span> OpenCV Usage
+                        </div>
+                    </a>
+                    
+                </div>
+                
+                <a class="next lg:text-2xl" href="https://milaiai.com/post/linux/">
+                    <div
+                        class="transition-colors duration-300 col-span-1 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                        Linux使用技巧 <span class="icon-keyboard_arrow_right"></span>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+            <div class="mb-3">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "milaiai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+    
+    <div class="container mr-auto ml-auto">
+        <p>&copy; 2022 <a href="https://milaiai.com/" class="hover:text-gray-500">MILAI AI</a></p>
+        <p>Powered by <a href="https://gohugo.io/" class="hover:text-gray-500">Hugo</a>, Theme <a
+                href="https://github.com/opera7133/Blonde" class="hover:text-gray-500">Blonde</a>.</p>
+    </div>
+    <script src="/js/switch.js"></script>
+
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js' type='text/javascript'>    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"],
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$','$'] ],
+                   displayMath: [ ['$$','$$']  ],
+                   processEscapes: true
+                  },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });</script>
+</footer>
+</div>
+</body>
+
+</html>

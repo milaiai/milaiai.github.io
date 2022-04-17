@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://milaiai.com/archives/2022/04/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>VINS FUSION</title>
+      <link>https://milaiai.com/post/vins_fusion/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/vins_fusion/</guid>
+      <description>Build Get project git clone https://github.com/yubaoliu/VINS-Fusion -b dev Ubuntu 16 ROS OpenCV 3.x set(OpenCV_DIR &amp;#34;/home/yubao/Software/install/opencv_3.3.1/share/OpenCV&amp;#34;) or export OpenCV_DIR=&amp;#34;/home/yubao/Software/install/opencv_3.3.1/share/OpenCV&amp;#34; compile cd ROS_PROJECT_DIR catkin_make Problems 编译错误 修改这些变量，之前使用的是C语言版本的API，并没有包含相应的头文件，所以报措。理论上</description>
+    </item>
+    
+    <item>
       <title>NFS共享服务配置</title>
       <link>https://milaiai.com/post/nfs/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>

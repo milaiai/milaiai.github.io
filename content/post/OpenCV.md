@@ -1,6 +1,6 @@
 ---
 author: "yubao"
-title: "OpenCV"
+title: "OpenCV Usage"
 image: "img/cover.jpg"
 draft: false
 date: 2021-12-14
@@ -9,6 +9,64 @@ tags: ["OpenCV"]
 archives: ["2021/12"]
 ---
 
+# CMake Usage
+
+```sh
+cmake_minimum_required(VERSION 2.8)
+project( DisplayImage )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( DisplayImage DisplayImage.cpp )
+target_link_libraries( DisplayImage ${OpenCV_LIBS} )
+```
+
+Basic variables:
+
+- OpenCV_LIBS                     : The list of all imported targets for OpenCV modules.
+- OpenCV_INCLUDE_DIRS             : The OpenCV include directories.
+- OpenCV_COMPUTE_CAPABILITIES     : The version of compute capability.
+- OpenCV_ANDROID_NATIVE_API_LEVEL : Minimum required level of Android API.
+- OpenCV_VERSION                  : The version of this OpenCV build: "3.3.1"
+- OpenCV_VERSION_MAJOR            : Major version part of OpenCV_VERSION: "3"
+- OpenCV_VERSION_MINOR            : Minor version part of OpenCV_VERSION: "3"
+- OpenCV_VERSION_PATCH            : Patch version part of OpenCV_VERSION: "1"
+- OpenCV_VERSION_STATUS           : Development status of this build: ""
+
+Advanced variables:
+- OpenCV_SHARED                   : Use OpenCV as shared library
+- OpenCV_INSTALL_PATH             : OpenCV location
+- OpenCV_LIB_COMPONENTS           : Present OpenCV modules list
+- OpenCV_USE_MANGLED_PATHS        : Mangled OpenCV path flag
+
+Deprecated variables:
+- OpenCV_VERSION_TWEAK            : Always "0"
+
+
+# Test example
+```cap
+#include <stdio.h>
+#include <opencv2/opencv.hpp>
+using namespace cv;
+int main(int argc, char** argv )
+{
+    if ( argc != 2 )
+    {
+        printf("usage: DisplayImage.out <Image_Path>\n");
+        return -1;
+    }
+    Mat image;
+    image = imread( argv[1], 1 );
+    if ( !image.data )
+    {
+        printf("No image data \n");
+        return -1;
+    }
+    namedWindow("Display Image", WINDOW_AUTOSIZE );
+    imshow("Display Image", image);
+    waitKey(0);
+    return 0;
+}
+```
 
 # Possible Errors
 
@@ -99,5 +157,68 @@ bool pyopencv_to(PyObject* obj, String& value, const char* name)
     return true;
 }
 ```
+
+## blenders.cpp
+
+Error Message:
+
+```sh
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp: In member function ‘virtual void cv::detail::MultiBandBlender::feed(cv::InputArray, cv::InputArray, cv::Point)’:
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:412:39: error: ‘cv::cuda::device’ has not been declared
+             using namespace cv::cuda::device::blend;
+                                       ^~~~~~
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:412:47: error: ‘blend’ is not a namespace-name
+             using namespace cv::cuda::device::blend;
+                                               ^~~~~
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:412:52: error: expected namespace-name before ‘;’ token
+             using namespace cv::cuda::device::blend;
+                                                    ^
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:415:17: error: ‘addSrcWeightGpu32F’ was not declared in this scope
+                 addSrcWeightGpu32F(_src_pyr_laplace, _weight_pyr_gauss, _dst_pyr_laplace, _dst_band_weights, rc);
+                 ^~~~~~~~~~~~~~~~~~
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:415:17: note: suggested alternative: ‘addWeighted’
+                 addSrcWeightGpu32F(_src_pyr_laplace, _weight_pyr_gauss, _dst_pyr_laplace, _dst_band_weights, rc);
+                 ^~~~~~~~~~~~~~~~~~
+                 addWeighted
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:419:17: error: ‘addSrcWeightGpu16S’ was not declared in this scope
+                 addSrcWeightGpu16S(_src_pyr_laplace, _weight_pyr_gauss, _dst_pyr_laplace, _dst_band_weights, rc);
+                 ^~~~~~~~~~~~~~~~~~
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:419:17: note: suggested alternative: ‘addWeighted’
+                 addSrcWeightGpu16S(_src_pyr_laplace, _weight_pyr_gauss, _dst_pyr_laplace, _dst_band_weights, rc);
+                 ^~~~~~~~~~~~~~~~~~
+                 addWeighted
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp: In member function ‘virtual void cv::detail::MultiBandBlender::blend(cv::InputOutputArray, cv::InputOutputArray)’:
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:554:41: error: ‘cv::cuda::device’ has not been declared
+             using namespace ::cv::cuda::device::blend;
+                                         ^~~~~~
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:554:49: error: ‘blend’ is not a namespace-name
+             using namespace ::cv::cuda::device::blend;
+```
+
+Solution:
+
+Comment "BUILD_CUDA_STATUS".
+
+## CV_GRAY2RGB
+
+Error message:
+
+```cpp
+VINS-Fusion/vins_estimator/src/featureTracker/feature_tracker.cpp:456:36: error: ‘CV_GRAY2RGB’ was not declared in this scope
+     cv::cvtColor(imTrack, imTrack, CV_GRAY2RGB);
+                                    ^~~~~~~~~~~
+```
+
+Solution:
+
+- Method1: Switch to OpenCV 3.x
+```cpp
+https://docs.opencv.org/3.0.0/df/d4e/group__imgproc__c.html
+#include <opencv2/imgproc/types_c.h>
+or
+#include <opencv2/imgproc/imgproc_c.h>
+```
+- Mehthod2: modify parameters according to higher OpenCV version
+
 
 # References

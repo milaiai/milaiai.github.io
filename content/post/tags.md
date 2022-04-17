@@ -15,6 +15,14 @@ archives = ["2019/03"]
 
 ![](https://image.vimjc.com/images/691e0c29gy1fnnj08ml3qg20k807x3zq.gif)
 
+Command	Function
+Ctrl + ]	Go to definition
+Ctrl + T	Jump back from the definition
+Ctrl + W Ctrl + ]	Open the definition in a horizontal split
+:ts <tag_name>	List the tags that match <tag_name>
+:tn	Jump to the next matching tag
+:tp	Jump to the previous matching tag
+
 # Shortcuts
 - Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳转。
 - Ctrl+t or Ctrl + o: 跳转到前一次的tag处
@@ -47,7 +55,7 @@ ctags -R --c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+liaS --extra=+q
 
 - 只对特定文件生成tags
 ```sh
-ctags `find -name "*.h"` 
+ctags `find -name "*.h"`
 ```
 - 用于跳转到指定的tag。例如：
 ```sh

@@ -9,11 +9,11 @@
     <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/docer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Proxy Setting</title>
-      <link>https://milaiai.com/post/docker-proxy/</link>
+      <link>https://milaiai.com/post/docker/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://milaiai.com/post/docker-proxy/</guid>
-      <description>Sometimes we need to download the developping packages from the external Network when do the research. However, I found I cannot let docker access the proxy depoloyed on my host machine especially in the build stage, such as &amp;ldquo;docker-compose build&amp;rdquo;. Usually the proxy on the host can be used when the container is up (docker-compose up). Successful Configuration for &amp;ldquo;docker-compose build&amp;rdquo; Check the IP address on your host. Use the</description>
+      <guid>https://milaiai.com/post/docker/</guid>
+      <description>daemon You may meet such error: ERROR: Service &amp;#39;web&amp;#39; failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout sudo vim /etc/docker/daemon.json { “registry-mirrors”:[“https://docker.mirrors.ustc</description>
     </item>
     
   </channel>

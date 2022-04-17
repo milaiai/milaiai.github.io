@@ -11,7 +11,7 @@
   gtag('config', 'UA-131527698-4');
 </script>
 
-<title>MILAI AI | OpenCV</title>
+<title>MILAI AI | OpenCV Usage</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <meta name="description" content="MILAI AI">
@@ -25,7 +25,7 @@
     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="MILAI AI | OpenCV" />
+    <meta property="og:title" content="MILAI AI | OpenCV Usage" />
     
     
         
@@ -136,7 +136,7 @@
     <div class="col-span-3 dark:text-white">
     
         <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
-            <h1 class="title text-4xl">OpenCV</h1>
+            <h1 class="title text-4xl">OpenCV Usage</h1>
             <hr class="my-2">
             <aside id="meta">
                 <div>
@@ -157,7 +157,60 @@
             
             <img class="py-4" src="https://milaiai.com/img/cover.jpg">
             
-            <div class="content mt-5"><h1 id="possible-errors">Possible Errors</h1>
+            <div class="content mt-5"><h1 id="cmake-usage">CMake Usage</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cmake_minimum_required<span style="color:#f92672">(</span>VERSION 2.8<span style="color:#f92672">)</span>
+project<span style="color:#f92672">(</span> DisplayImage <span style="color:#f92672">)</span>
+find_package<span style="color:#f92672">(</span> OpenCV REQUIRED <span style="color:#f92672">)</span>
+include_directories<span style="color:#f92672">(</span> <span style="color:#e6db74">${</span>OpenCV_INCLUDE_DIRS<span style="color:#e6db74">}</span> <span style="color:#f92672">)</span>
+add_executable<span style="color:#f92672">(</span> DisplayImage DisplayImage.cpp <span style="color:#f92672">)</span>
+target_link_libraries<span style="color:#f92672">(</span> DisplayImage <span style="color:#e6db74">${</span>OpenCV_LIBS<span style="color:#e6db74">}</span> <span style="color:#f92672">)</span>
+</code></pre></div><p>Basic variables:</p>
+<ul>
+<li>OpenCV_LIBS                     : The list of all imported targets for OpenCV modules.</li>
+<li>OpenCV_INCLUDE_DIRS             : The OpenCV include directories.</li>
+<li>OpenCV_COMPUTE_CAPABILITIES     : The version of compute capability.</li>
+<li>OpenCV_ANDROID_NATIVE_API_LEVEL : Minimum required level of Android API.</li>
+<li>OpenCV_VERSION                  : The version of this OpenCV build: &ldquo;3.3.1&rdquo;</li>
+<li>OpenCV_VERSION_MAJOR            : Major version part of OpenCV_VERSION: &ldquo;3&rdquo;</li>
+<li>OpenCV_VERSION_MINOR            : Minor version part of OpenCV_VERSION: &ldquo;3&rdquo;</li>
+<li>OpenCV_VERSION_PATCH            : Patch version part of OpenCV_VERSION: &ldquo;1&rdquo;</li>
+<li>OpenCV_VERSION_STATUS           : Development status of this build: &quot;&quot;</li>
+</ul>
+<p>Advanced variables:</p>
+<ul>
+<li>OpenCV_SHARED                   : Use OpenCV as shared library</li>
+<li>OpenCV_INSTALL_PATH             : OpenCV location</li>
+<li>OpenCV_LIB_COMPONENTS           : Present OpenCV modules list</li>
+<li>OpenCV_USE_MANGLED_PATHS        : Mangled OpenCV path flag</li>
+</ul>
+<p>Deprecated variables:</p>
+<ul>
+<li>OpenCV_VERSION_TWEAK            : Always &ldquo;0&rdquo;</li>
+</ul>
+<h1 id="test-example">Test example</h1>
+<pre tabindex="0"><code class="language-cap" data-lang="cap">#include &lt;stdio.h&gt;
+#include &lt;opencv2/opencv.hpp&gt;
+using namespace cv;
+int main(int argc, char** argv )
+{
+    if ( argc != 2 )
+    {
+        printf(&quot;usage: DisplayImage.out &lt;Image_Path&gt;\n&quot;);
+        return -1;
+    }
+    Mat image;
+    image = imread( argv[1], 1 );
+    if ( !image.data )
+    {
+        printf(&quot;No image data \n&quot;);
+        return -1;
+    }
+    namedWindow(&quot;Display Image&quot;, WINDOW_AUTOSIZE );
+    imshow(&quot;Display Image&quot;, image);
+    waitKey(0);
+    return 0;
+}
+</code></pre><h1 id="possible-errors">Possible Errors</h1>
 <h2 id="fatal-error-dynlink_nvcuvidh-no-such-file-or-directory">fatal error: dynlink_nvcuvid.h: No such file or directory</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">In file included from /home/yubao/Software/opencv/build/modules/cudacodec/opencv_cudacodec_pch_dephelp.cxx:1:
 /home/yubao/Software/opencv/modules/cudacodec/src/precomp.hpp:60:18: fatal error: dynlink_nvcuvid.h: No such file or directory
@@ -212,7 +265,57 @@ bool pyopencv_to<span style="color:#f92672">(</span>PyObject* obj, String&amp; v
     value <span style="color:#f92672">=</span> String<span style="color:#f92672">(</span>str<span style="color:#f92672">)</span>;
     <span style="color:#66d9ef">return</span> true;
 <span style="color:#f92672">}</span>
-</code></pre></div><h1 id="references">References</h1>
+</code></pre></div><h2 id="blenderscpp">blenders.cpp</h2>
+<p>Error Message:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp: In member <span style="color:#66d9ef">function</span> ‘virtual void cv::detail::MultiBandBlender::feed<span style="color:#f92672">(</span>cv::InputArray, cv::InputArray, cv::Point<span style="color:#f92672">)</span>’:
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:412:39: error: ‘cv::cuda::device’ has not been declared
+             using namespace cv::cuda::device::blend;
+                                       ^~~~~~
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:412:47: error: ‘blend’ is not a namespace-name
+             using namespace cv::cuda::device::blend;
+                                               ^~~~~
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:412:52: error: expected namespace-name before ‘;’ token
+             using namespace cv::cuda::device::blend;
+                                                    ^
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:415:17: error: ‘addSrcWeightGpu32F’ was not declared in this scope
+                 addSrcWeightGpu32F<span style="color:#f92672">(</span>_src_pyr_laplace, _weight_pyr_gauss, _dst_pyr_laplace, _dst_band_weights, rc<span style="color:#f92672">)</span>;
+                 ^~~~~~~~~~~~~~~~~~
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:415:17: note: suggested alternative: ‘addWeighted’
+                 addSrcWeightGpu32F<span style="color:#f92672">(</span>_src_pyr_laplace, _weight_pyr_gauss, _dst_pyr_laplace, _dst_band_weights, rc<span style="color:#f92672">)</span>;
+                 ^~~~~~~~~~~~~~~~~~
+                 addWeighted
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:419:17: error: ‘addSrcWeightGpu16S’ was not declared in this scope
+                 addSrcWeightGpu16S<span style="color:#f92672">(</span>_src_pyr_laplace, _weight_pyr_gauss, _dst_pyr_laplace, _dst_band_weights, rc<span style="color:#f92672">)</span>;
+                 ^~~~~~~~~~~~~~~~~~
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:419:17: note: suggested alternative: ‘addWeighted’
+                 addSrcWeightGpu16S<span style="color:#f92672">(</span>_src_pyr_laplace, _weight_pyr_gauss, _dst_pyr_laplace, _dst_band_weights, rc<span style="color:#f92672">)</span>;
+                 ^~~~~~~~~~~~~~~~~~
+                 addWeighted
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp: In member <span style="color:#66d9ef">function</span> ‘virtual void cv::detail::MultiBandBlender::blend<span style="color:#f92672">(</span>cv::InputOutputArray, cv::InputOutputArray<span style="color:#f92672">)</span>’:
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:554:41: error: ‘cv::cuda::device’ has not been declared
+             using namespace ::cv::cuda::device::blend;
+                                         ^~~~~~
+/home/yubao/Software/opencv_3.3.1/modules/stitching/src/blenders.cpp:554:49: error: ‘blend’ is not a namespace-name
+             using namespace ::cv::cuda::device::blend;
+</code></pre></div><p>Solution:</p>
+<p>Comment &ldquo;BUILD_CUDA_STATUS&rdquo;.</p>
+<h2 id="cv_gray2rgb">CV_GRAY2RGB</h2>
+<p>Error message:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">VINS<span style="color:#f92672">-</span>Fusion<span style="color:#f92672">/</span>vins_estimator<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>featureTracker<span style="color:#f92672">/</span>feature_tracker.cpp:<span style="color:#ae81ff">456</span><span style="color:#f92672">:</span><span style="color:#ae81ff">36</span><span style="color:#f92672">:</span> error: <span style="color:#960050;background-color:#1e0010">‘</span>CV_GRAY2RGB<span style="color:#960050;background-color:#1e0010">’</span> was not declared in <span style="color:#66d9ef">this</span> scope
+     cv<span style="color:#f92672">::</span>cvtColor(imTrack, imTrack, CV_GRAY2RGB);
+                                    <span style="color:#f92672">^~~~~~~~~~~</span>
+</code></pre></div><p>Solution:</p>
+<ul>
+<li>Method1: Switch to OpenCV 3.x</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">https:<span style="color:#75715e">//docs.opencv.org/3.0.0/df/d4e/group__imgproc__c.html
+</span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;opencv2/imgproc/types_c.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>or
+<span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;opencv2/imgproc/imgproc_c.h&gt;</span><span style="color:#75715e">
+</span></code></pre></div><ul>
+<li>Mehthod2: modify parameters according to higher OpenCV version</li>
+</ul>
+<h1 id="references">References</h1>
 </div>
             <aside id="meta">
                 
@@ -222,7 +325,7 @@ bool pyopencv_to<span style="color:#f92672">(</span>PyObject* obj, String&amp; v
             <div class="grid grid-cols-2">
                 <div class="col-span-1">
                     
-                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/docker-proxy/">
+                    <a class="previous lg:text-2xl" href="https://milaiai.com/post/docker/">
                         <div
                             class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
                             <span class="icon-keyboard_arrow_left"></span> Docker Proxy Setting
@@ -231,10 +334,10 @@ bool pyopencv_to<span style="color:#f92672">(</span>PyObject* obj, String&amp; v
                     
                 </div>
                 
-                <a class="next lg:text-2xl" href="https://milaiai.com/post/git/">
+                <a class="next lg:text-2xl" href="https://milaiai.com/post/eigen/">
                     <div
                         class="transition-colors duration-300 col-span-1 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
-                        Github使用技巧 <span class="icon-keyboard_arrow_right"></span>
+                        Eigen <span class="icon-keyboard_arrow_right"></span>
                     </div>
                 </a>
                 
