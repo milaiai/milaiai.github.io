@@ -13,7 +13,7 @@
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/vins_fusion/</guid>
-      <description>Build Get project git clone https://github.com/yubaoliu/VINS-Fusion -b dev Ubuntu 16 ROS OpenCV 3.x set(OpenCV_DIR &amp;#34;/home/yubao/Software/install/opencv_3.3.1/share/OpenCV&amp;#34;) or export OpenCV_DIR=&amp;#34;/home/yubao/Software/install/opencv_3.3.1/share/OpenCV&amp;#34; compile cd ROS_PROJECT_DIR catkin_make Problems 编译错误 修改这些变量，之前使用的是C语言版本的API，并没有包含相应的头文件，所以报措。理论上</description>
+      <description>Introduction VINS-Fusion 是继 VINS-Mono 和 VINS-Mobile（单目视觉惯导 SLAM 方案）后，香港科技大学沈劭劼老师开源的双目视觉惯导 SLAM 方案，VINS-Fusion 是一种基于</description>
     </item>
     
     <item>
@@ -68,6 +68,15 @@
       
       <guid>https://milaiai.com/post/opencv/</guid>
       <description>CMake Usage cmake_minimum_required(VERSION 2.8) project( DisplayImage ) find_package( OpenCV REQUIRED ) include_directories( ${OpenCV_INCLUDE_DIRS} ) add_executable( DisplayImage DisplayImage.cpp ) target_link_libraries( DisplayImage ${OpenCV_LIBS} ) Basic variables: OpenCV_LIBS : The list of all imported targets for OpenCV modules. OpenCV_INCLUDE_DIRS : The OpenCV include directories. OpenCV_COMPUTE_CAPABILITIES : The version of compute capability. OpenCV_ANDROID_NATIVE_API_LEVEL : Minimum required level of Android API. OpenCV_VERSION : The version of this OpenCV build: &amp;ldquo;3.3.1&amp;rdquo; OpenCV_VERSION_MAJOR : Major version part</description>
+    </item>
+    
+    <item>
+      <title>Dataset</title>
+      <link>https://milaiai.com/post/dataset/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/dataset/</guid>
+      <description>网上找到的国内下载地址 Refer: https://blog.csdn.net/qq_36170626/article/details/94902166 TUM 链接：https://pan.baidu.com/s/1nwXtGqH 密码：lsgr KITTI 链接：https://pa</description>
     </item>
     
     <item>
@@ -157,7 +166,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/vim/</guid>
-      <description></description>
+      <description>Debug go-vim-debugging-with-gdb Vim 调试：termdebug 入门 Debugging in Vim How to use ConqueGDB in Vim How does debugging with VIM and gdb? Termdebug :packadd termdebug Markdown HELLO VIM 之插件篇 import cv2 echo &amp;#34;hello&amp;#34; $$ a+b - 1= c^2 $$</description>
     </item>
     
     <item>

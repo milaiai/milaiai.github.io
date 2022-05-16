@@ -5,7 +5,7 @@ date = "2021-01-10"
 description = "Docker Proxy Setting"
 image =  "img/robot-world-coordinate.png"
 tags = [
-    "Docer",
+"Docer",
 ]
 archives = ["2021/01"]
 
@@ -14,6 +14,7 @@ archives = ["2021/01"]
 # daemon
 
 You may meet such error:
+
 ```sh
 ERROR: Service 'web' failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout
 ```
@@ -28,9 +29,10 @@ sudo vim /etc/docker/daemon.json
 
 # commands
 
-- systemctl daemon-reload
-- systemctl restart docker
-- remove all images and containers
+*   systemctl daemon-reload
+*   systemctl restart docker
+*   remove all images and containers
+
 ```sh
 docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
@@ -44,10 +46,12 @@ However, I found I cannot let docker access the proxy depoloyed on my host machi
 Usually the proxy on the host can be used when the container is up (docker-compose up).
 
 ## Successful Configuration for "docker-compose build"
-- Check the IP address on your host. Use the IP like "192.168.1.7", rather than "127.0.0.1". Because "127.*" is inside the docker container. A temperary docker container is used when you build the docker image.
-- Let the proxy server listen the IP and port, "192.168.1.7"  that you set in the previous step. By default, the proxy server only can listen "127.0.0.1". **Note: this is the reason why I failed in the past.**
+
+*   Check the IP address on your host. Use the IP like "192.168.1.7", rather than "127.0.0.1". Because "127.\*" is inside the docker container. A temperary docker container is used when you build the docker image.
+*   Let the proxy server listen the IP and port, "192.168.1.7"  that you set in the previous step. By default, the proxy server only can listen "127.0.0.1". **Note: this is the reason why I failed in the past.**
 
 ## docker-compose example
+
 ```sh
 version: '2.3'
 services:
@@ -77,12 +81,16 @@ services:
         - /tmp/.X11-unix:/tmp/.X11-unix:rw
         - ~/.Xauthority:/root/.Xauthority
 ```
+
 ## env example
+
 ```sh
 http_proxy=http://192.168.1.7:41091
 https_proxy=http://192.168.1.7:41091
 ```
+
 ## Dockerfile example
+
 ```sh
 FROM golang:1.12
 
@@ -145,7 +153,7 @@ docker build -t anguiao/nginx-brotli . --build-arg http_proxy=http://172.21.0.9:
 
 注意：在写代理地址时，不可写成 127.0.0.1 或者 localhost，应使用宿主机的 IP。我这里使用的是宿主机的内网 IP，可根据网络环境进行适当的改动。
 
-##  docker.service.d
+## docker.service.d
 
 mkdir /etc/systemd/system/docker.service.d
 
@@ -160,9 +168,9 @@ mkdir /etc/systemd/system/docker.service.d
 
  # Example with authentication
  Environment="HTTP_PROXY=http://username:password@proxy_url:proxy_port" "NO_PROXY=localhost,127.0.0.0/8"
- ```
+```
 
 # references
 
-- [使用代理构建 Docker 镜像](https://blog.anguiao.com/archives/use-proxy-when-building-docker-image.html)
-- [docker build时怎么用http proxy代理?](https://segmentfault.com/q/1010000004613949)
+*   [使用代理构建 Docker 镜像](https://blog.anguiao.com/archives/use-proxy-when-building-docker-image.html)
+*   [docker build时怎么用http proxy代理?](https://segmentfault.com/q/1010000004613949)

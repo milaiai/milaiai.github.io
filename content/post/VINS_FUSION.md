@@ -12,6 +12,11 @@ archives = ["2022/04"]
 
 +++
 
+# Introduction
+
+
+VINS-Fusion 是继 VINS-Mono 和 VINS-Mobile（单目视觉惯导 SLAM 方案）后，香港科技大学沈劭劼老师开源的双目视觉惯导 SLAM 方案，VINS-Fusion 是一种基于优化的多传感器状态估计器，可实现自主应用（无人机，汽车和 AR / VR）的精确自定位。 VINS-Fusion 是 VINS-Mono 的扩展，支持多种视觉惯性传感器类型（单目摄像机+ IMU，双目摄像机+ IMU，甚至仅限双目摄像机）。开源项目组还展示了将 VINS 与 GPS 融合的模组示例。
+
 # Build
 - Get project
 ```sh
@@ -68,3 +73,4 @@ Refer this error: https://github.com/HKUST-Aerial-Robotics/VINS-Fusion/issues/10
 # References
 - [Vins-Fusion安装记录](https://zhuanlan.zhihu.com/p/432167383)
 - [彻底搞懂视觉-惯性SLAM：vins-fusion原理精讲与源码剖析-视觉传感器部分](https://www.bilibili.com/video/BV1YY41147k2)
+- [一起快速上手 VINS-Fusion](https://zhuanlan.zhihu.com/p/62988961)

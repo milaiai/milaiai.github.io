@@ -57,7 +57,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/vim/</guid>
-      <description></description>
+      <description>Debug go-vim-debugging-with-gdb Vim 调试：termdebug 入门 Debugging in Vim How to use ConqueGDB in Vim How does debugging with VIM and gdb? Termdebug :packadd termdebug Markdown HELLO VIM 之插件篇 import cv2 echo &amp;#34;hello&amp;#34; $$ a+b - 1= c^2 $$</description>
     </item>
     
     <item>

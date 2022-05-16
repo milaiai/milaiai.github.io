@@ -13,7 +13,7 @@
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/vins_fusion/</guid>
-      <description>Build Get project git clone https://github.com/yubaoliu/VINS-Fusion -b dev Ubuntu 16 ROS OpenCV 3.x set(OpenCV_DIR &amp;#34;/home/yubao/Software/install/opencv_3.3.1/share/OpenCV&amp;#34;) or export OpenCV_DIR=&amp;#34;/home/yubao/Software/install/opencv_3.3.1/share/OpenCV&amp;#34; compile cd ROS_PROJECT_DIR catkin_make Problems 编译错误 修改这些变量，之前使用的是C语言版本的API，并没有包含相应的头文件，所以报措。理论上</description>
+      <description>Introduction VINS-Fusion 是继 VINS-Mono 和 VINS-Mobile（单目视觉惯导 SLAM 方案）后，香港科技大学沈劭劼老师开源的双目视觉惯导 SLAM 方案，VINS-Fusion 是一种基于</description>
     </item>
     
   </channel>

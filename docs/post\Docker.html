@@ -28,7 +28,7 @@ date = "2021-01-10"
 description = "Docker Proxy Setting"
 image =  "img/robot-world-coordinate.png"
 tags = [
-    "Docer",
+"Docer",
 ]
 archives = ["2021/01"]</p>
 <p>+++</p>
@@ -43,10 +43,10 @@ archives = ["2021/01"]</p>
 <ul>
 <li>systemctl daemon-reload</li>
 <li>systemctl restart docker</li>
-<li>remove all images and containers<pre><code class="language-sh">docker rm $(docker ps -a -q)
-docker rmi $(docker images -q)</code></pre>
-</li>
+<li>remove all images and containers</li>
 </ul>
+<pre><code class="language-sh">docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)</code></pre>
 <h1 id="docker-proxy">Docker Proxy</h1>
 <p>Sometimes we need to download the developing packages from the external Network when do the research.
 However, I found I cannot let docker access the proxy depoloyed on my host machine especially in the build stage, such as "docker-compose build".</p>

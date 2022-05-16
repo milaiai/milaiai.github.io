@@ -6,7 +6,16 @@
     <description>Recent content in VIM on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://milaiai.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dataset</title>
+      <link>https://milaiai.com/post/dataset/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://milaiai.com/post/dataset/</guid>
+      <description>网上找到的国内下载地址 Refer: https://blog.csdn.net/qq_36170626/article/details/94902166 TUM 链接：https://pan.baidu.com/s/1nwXtGqH 密码：lsgr KITTI 链接：https://pa</description>
+    </item>
+    
     <item>
       <title>Ctags-VIM</title>
       <link>https://milaiai.com/post/tags/</link>
@@ -22,7 +31,7 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://milaiai.com/post/vim/</guid>
-      <description></description>
+      <description>Debug go-vim-debugging-with-gdb Vim 调试：termdebug 入门 Debugging in Vim How to use ConqueGDB in Vim How does debugging with VIM and gdb? Termdebug :packadd termdebug Markdown HELLO VIM 之插件篇 import cv2 echo &amp;#34;hello&amp;#34; $$ a+b - 1= c^2 $$</description>
     </item>
     
   </channel>
